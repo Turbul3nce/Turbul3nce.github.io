@@ -6,7 +6,7 @@ logo: 'assets/images/favicon.ico'
 favicon: 'assets/images/favicon.ico'
 baseurl: /
 google_analytics: 'G-NMRXN9YDL7'
-disqus: 'BugCulture'
+disqus: 'bugculture-io'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
@@ -16,9 +16,9 @@ authors:
   chandler:
     name: Chandler Rose
     display_name: Turbul3nce
-    gravatar: bravely4a74e725b2
+    gravatar: https://gravatar.com/bravely4a74e725b2
     email: turbunl3nce@wearehackerone.com
-    twitter: https://x.com/turbul3nce_x
+    twitter: https://www.linkedin.com/in/chandler-rose
     description: "Author of this website. Red Team Operator, Bug Bounty Hunter, and Researcher."
   
 # Plugins
