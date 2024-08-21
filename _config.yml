@@ -14,11 +14,10 @@ permalink: /:title/
 # Authors
 authors:
   chandler:
-    name: Chandler
-    display_name: Sal
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    name: Chandler Rose
+    display_name: Turbul3nce
+    gravatar: bravely4a74e725b2
     email: turbunl3nce@wearehackerone.com
-    web: https://www.wowthemes.net
     twitter: https://x.com/turbul3nce_x
     description: "Author of this website. Red Team Operator, Bug Bounty Hunter, and Researcher."
   
