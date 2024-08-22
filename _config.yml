@@ -2,7 +2,7 @@
 name: "Bug Culture"
 title: "Bug Culture"
 description: "Bug Bounty, Research, Pentesting"
-logo: 'assets/images/logo.png'
+logo: 'assets/images/favicon.ico'
 favicon: 'assets/images/favicon.ico'
 baseurl:
 google_analytics: 'G-NMRXN9YDL7'
