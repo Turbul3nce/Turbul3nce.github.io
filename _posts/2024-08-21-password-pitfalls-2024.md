@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Password Pitfalls: Why Even in 2024, We're Still Our Own Worst Enemy"
+title:  "Password Pitfalls: Even in 2024, We're Still Our Own Worst Enemy"
 author: chandler
 categories: [ pentests,]
 image: assets/images/1.jpg
