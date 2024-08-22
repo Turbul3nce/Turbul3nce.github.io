@@ -1,30 +1,29 @@
 ---
 layout: post
-title:  "Password Pitfalls: Even in 2024, We're Still Our Own Worst Enemy"
+title:  "OSINT Unlocks the Door: The Enduring Risk of Weak Passwords"
 author: chandler
 categories: [ pentests,]
 image: assets/images/1.jpg
 featured: true
 ---
 
-Earlier this year, I was conducting a penetration test for a smaller bank, which we'll leave unnamed. The test involved auditing their local infrastructure, exploring what an attacker could achieve with close access, already on the same network without any credentials to the Active Directory.
+Earlier this year, I was contracted to conduct a penetration test for a smaller bank, which will remain unnamed. The scope of the test focused on auditing their local infrastructure to determine what an attacker could achieve with close network access but no initial credentials to their Active Directory.
 
-My initial approach included running routine attack vectors for a local intruder: scanning with `nmap`, leveraging `responder`, packet sniffing with `wireshark`, testing printers/MFPs, and executing scans with `CrackMapExec`. Despite my efforts, nothing was yielding significant results. The printers did show a few vulnerabilities, but nothing that allowed for privilege escalation. It seemed all the proper mitigations to prevent relay attacks were firmly in place, such as disabling NTLMv1, enforcing SMB signing, and implementing strict account lockout policies. This level of security was to be expected as the bank had undergone several penetration tests in the past.
+After initiating a network scan with Nessus, I proceeded with the standard toolkit for a local penetration test—running `nmap`, leveraging `responder`, packet sniffing with `wireshark`, examining printers/MFPs, and scanning services with `CrackMapExec`. Despite these efforts, no significant vulnerabilities emerged. The printers showed some weaknesses, but nothing that could facilitate privilege escalation. This was unsurprising, as the bank had robust mitigations in place against relay attacks and other common vulnerabilities. They had also had several penetration tests in the past. 
 
-After a few days of hitting dead ends, I decided to switch tactics and turned to password spraying. The bank had a mobile application listed on the app store, which, interestingly, had only four comments—all praising how "amazing" it was. I surmised these comments were likely from employees, especially since they were all posted around the same time a few months ago. This small detail is crucial because it highlights the importance of thorough OSINT—always dig deep.
+### Pray and Spray 
+After several days of getting nowhere, I decided it was time to target some services and begin password spraying. To facilitate this attack, I needed usernames. From the bank's website and employees’ LinkedIn profiles, I compiled a list of potential usernames. Additionally, I discovered that the bank had an app on the App Store. The bank's mobile application had only four reviews, all excessively positive, likely from employees given the timing of the posts. Thus, I added these names to my usernames file. The significance of the App Store reviews became evident when the account I managed to login as belonged to one of these reviewers. This highlights the importance of thorough Open Source Intelligence (OSINT).
 
-With a list of names gathered from LinkedIn and the bank's website, I began password spraying using common business passwords:
+With these usernames, I attempted to password spray using common business credentials:
 
 ```bash
-crackmapexec smb 10.10.10.0/24 -u users.txt -p passwords.txt --continue-on-success
+crackmapexec smb 192.168.1.0/24 -u users.txt -p passwordlist.txt --continue-on-success
 ```
 
-However, I didn't get anywhere with SMB—possibly due to some issues with crackmapexec not working at the time with the winrm service. So, I switched to using winrm-brute for password spraying:
+However, I didn’t get anywhere with SMB. So, I moved onto spraying against WinRM, but still nothing—I think this was due to some issues with crackmapexec not working at the time with the winrm service. So, I switched to using winrm-brute for password spraying.
 
-```bash
 winrm-brute --hosts 10.10.10.0/24 --usernames users.txt --passwords common_passwords.txt
-```
 
-And wouldn't you know it, Season2024! was the winning ticket—not just into any user account, but into a Domain Admin's account.
+And wouldn’t you know it, I had a hit! The password was in the format of SeasonYEAR!. And just like that, I was in! But this wasn’t just any domain user’s account, it was a Domain Admin. A domain admin with a weak password.
 
-This penetration test serves as a stark reminder of how simple human errors, like predictable passwords, can still be easy wins for attackers even today. It underscores the critical need for enforcing strong password policies, continuous education on security hygiene, and regular auditing to catch these oversights before they become liabilities. Remember, the chain is only as strong as its weakest link.
+This penetration test serves as a reminder of how simple human errors, like predictable passwords, can still be easy wins for attackers even today. It underscores the critical need for enforcing strong password policies, continuous education on security hygiene, and regular auditing to catch these oversights before they become liabilities. Remember, the chain is only as strong as its weakest link.
