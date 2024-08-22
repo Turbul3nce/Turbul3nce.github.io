@@ -7,7 +7,7 @@ image: assets/images/1.jpg
 featured: true
 ---
 
-Earlier this year, I was conducting a penetration test for a smaller bank, which we'll leave unnamed. The test involved auditing their local infrastructure, exploring what an attacker could achieve with close access, already on the same network without any credentials to the Active Directory environment.
+Earlier this year, I was conducting a penetration test for a smaller bank, which we'll leave unnamed. The test involved auditing their local infrastructure, exploring what an attacker could achieve with close access, already on the same network without any credentials to the Active Directory.
 
 My initial approach included running routine attack vectors for a local intruder: scanning with `nmap`, leveraging `responder`, packet sniffing with `wireshark`, testing printers/MFPs, and executing scans with `CrackMapExec`. Despite my efforts, nothing was yielding significant results. The printers did show a few vulnerabilities, but nothing that allowed for privilege escalation. It seemed all the proper mitigations to prevent relay attacks were firmly in place, such as disabling NTLMv1, enforcing SMB signing, and implementing strict account lockout policies. This level of security was to be expected as the bank had undergone several penetration tests in the past.
 
