@@ -7,7 +7,7 @@ favicon: 'assets/images/favicon.ico'
 baseurl: /
 google_analytics: 'G-NMRXN9YDL7'
 disqus: 'bugculture-io'
-mailchimp-list: 'http://eepurl.com/iXuLUM'
+mailchimp-list: 'https://eepurl.com/iXuLUM'
 include: ["_pages"]
 permalink: /:title/
 
