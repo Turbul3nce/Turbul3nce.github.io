@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: Chandler Rose
 permalink: /about
 comments: true
 ---
