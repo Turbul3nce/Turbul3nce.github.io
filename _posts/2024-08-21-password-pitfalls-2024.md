@@ -29,4 +29,4 @@ winrm-brute --hosts 10.10.10.0/24 --usernames users.txt --passwords common_passw
 
 And wouldn’t you know it, there was a hit! The password was in the format of SeasonYEAR!. And just like that, I was in! But this wasn’t just any domain user, it was a Domain Admin! A domain admin with a weak password.
 
-This penetration test serves as a reminder of how simple human errors, like predictable passwords, can still be easy wins for attackers even today. It underscores the critical need for enforcing strong password policies, continuous education on security hygiene, and regular auditing to catch these oversights before they become liabilities. Remember, the chain is only as strong as its weakest link.
+This penetration test underscores how predictable passwords continue to offer easy entry points for attackers. Implementing stringent password policies and regular security training is vital. Additionally, thorough OSINT is critical, as it expands the attack surface, making vulnerabilities more accessible and the target easier to breach. For pentesters, this means a greater likelihood of identifying and exploiting gaps, effectively tipping the scales in our favor.
