@@ -22,8 +22,10 @@ crackmapexec smb 192.168.1.0/24 -u users.txt -p passwordlist.txt --continue-on-s
 
 However, I didn’t get anywhere with SMB. So, I moved onto spraying against WinRM, but still nothing—I think this was due to some issues with crackmapexec not working at the time with the winrm service. So, I switched to using winrm-brute for password spraying.
 
+```bash
 winrm-brute --hosts 10.10.10.0/24 --usernames users.txt --passwords common_passwords.txt
+```
 
-And wouldn’t you know it, I had a hit! The password was in the format of SeasonYEAR!. And just like that, I was in! But this wasn’t just any domain user’s account, it was a Domain Admin. A domain admin with a weak password.
+And wouldn’t you know it, there was a hit! The password was in the format of SeasonYEAR!. And just like that, I was in! But this wasn’t just any domain user’s account, it was a Domain Admin. A domain admin with a weak password.
 
 This penetration test serves as a reminder of how simple human errors, like predictable passwords, can still be easy wins for attackers even today. It underscores the critical need for enforcing strong password policies, continuous education on security hygiene, and regular auditing to catch these oversights before they become liabilities. Remember, the chain is only as strong as its weakest link.
