@@ -4,7 +4,7 @@ title: "Bug Culture"
 description: "Bug Bounty, Research, Pentesting"
 logo: 'assets/images/favicon.ico'
 favicon: 'assets/images/favicon.ico'
-baseurl: /
+baseurl: 
 google_analytics: 'G-NMRXN9YDL7'
 disqus: 'bugculture-io'
 mailchimp-list: 'https://eepurl.com/iXuLUM'
