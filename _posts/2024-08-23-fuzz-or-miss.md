@@ -17,7 +17,7 @@ There are several tools we can use for fuzzing in scenarios like this, but I pre
 
 Finally, I'll configure the speed at which we want to fuzz. Although it's unlikely, we don't want to overwhelm the server in any way, so I usually reduce the number of concurrent requests to two or three. Next, we start fuzzing. Another crucial aspect of fuzzing is filtering through our results. Fortunately, Burpsuite makes this easy. We can search for specific words, depending on the type of testing we're conducting, or we can sort by response codes, sizes, etc.
 <p align="center">
-  <img src="assets/images/burp-intruder-settings.png" alt="Burp-Intruder" title="Burp Intruder Settings" width="80%" />
+  <img src="../assets/images/burp-intruder-settings.png" alt="Burp-Intruder" title="Burp Intruder Settings" width="80%" />
 </p>
 <br>
 So, utilizing various wordlists, I began probing deeper into the application’s directory structure. Interestingly, I discovered that accessing /01 redirected to a group's main page, while /02 led to a secondary page, if it existed. Encouraged by this pattern, I continued with /03, /04, and so on. This approach started revealing new, unindexed pages, some of which were admin pages that had not been identified in earlier phases of testing.
