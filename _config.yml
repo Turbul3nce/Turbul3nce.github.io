@@ -1,7 +1,7 @@
 # Site
 name: "Bug Culture"
 title: "Bug Culture"
-description: "Hacker Blog | Pentesting - Bug Bounty - Research"
+description: "Hacker Blog | Pentests - Bug Bounty - Research"
 logo: 'assets/images/favicon.ico'
 favicon: 'assets/images/favicon.ico'
 baseurl: 
