@@ -20,7 +20,7 @@ Finally, I'll configure the speed at which we want to fuzz. Although it's unlike
   <img src="assets/images/burp-intruder-settings.png" alt="Burp-Intruder" title="Burp Intruder Settings" width="80%" />
 </p>
 <br>
-So, tilizing various wordlists, I began probing deeper into the application’s directory structure. Interestingly, I discovered that accessing /01 redirected to a group's main page, while /02 led to a secondary page, if it existed. Encouraged by this pattern, I continued with /03, /04, and so on. This approach started revealing new, unindexed pages, some of which were admin pages that had not been identified in earlier phases of testing.
+So, utilizing various wordlists, I began probing deeper into the application’s directory structure. Interestingly, I discovered that accessing /01 redirected to a group's main page, while /02 led to a secondary page, if it existed. Encouraged by this pattern, I continued with /03, /04, and so on. This approach started revealing new, unindexed pages, some of which were admin pages that had not been identified in earlier phases of testing.
 
 To exploit this finding systematically, I created a wordlist ranging from 1 to 50 and resumed fuzzing across all known directory groups. This unearthed several intriguing pages, but one really stood out: it was used by admins to send notifications to various user groups within the application, including other Admins, regular users, and other specific groups.
 
