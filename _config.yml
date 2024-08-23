@@ -5,12 +5,11 @@ description: "Hacker Blog | Pentests - Bug Bounty - Research"
 logo: 'assets/images/favicon.ico'
 favicon: 'assets/images/favicon.ico'
 baseurl: 
-google_analytics: G-NMRXN9YDL7
+google_analytics: 'G-NMRXN9YDL7'
 disqus: 'bugculture-io'
 mailchimp-list: 'https://eepurl.com/iXuLUM'
 include: ["_pages"]
 permalink: /:title/
-remote_theme: jekyll/minima
 
 # Authors
 authors:
@@ -24,7 +23,6 @@ authors:
   
 
   plugins:
-  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
