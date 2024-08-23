@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "OSINT Unlocks the Door: The Enduring Risk of Weak Passwords"
+title:  "OSINT Opens the Door: Weak Passwords in 2024"
 author: chandler
 categories: [ pentests,]
 image: assets/images/1.jpg
