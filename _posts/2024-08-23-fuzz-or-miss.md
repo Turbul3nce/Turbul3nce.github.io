@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Fuzz or Miss: Uncovering the Hidden Bugs Pentesters Can't Afford to Ignore"
+title:  "Fuzz or Miss: Uncovering Hidden Bugs"
 author: chandler
 categories: [ pentests, bug bounty]
 image: assets/images/2.jpg
