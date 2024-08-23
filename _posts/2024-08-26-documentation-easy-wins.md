@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Finding Easy Wins: How Reading Documentation Can Uncover Overlooked Bugs in Bug Bounties"
+title:  "Bug Hunting: Read the Documentation"
 author: chandler
-categories: [ pentests,]
+categories: [ bug bounty,]
 image: assets/images/3.jpg
 featured: true
 ---
