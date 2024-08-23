@@ -8,9 +8,9 @@ featured: true
 ---
 
 ### Background 
-Earlier this year, I was part of a team conducting a penetration test for a client's publicly accessible web application. Although I won't specify the site or CMS, the experience highlighted a vital aspect of security testing.
+Earlier this year, my team and I were testing a publicly accessible web application. Although I won't specify the site or CMS, the experience highlighted a vital aspect of security testing.
 
-Over two weeks, we meticulously followed the OWASP testing guide, extensively enumerating every feature of the application. Despite our thorough efforts, we initially found no vulnerabilities. It wasn't until the end of our assignment that I decided to delve deeper by fuzzing directories several levels deep, driven by a determination to find anything that might have been overlooked.
+Over the two weeks, we meticulously followed the OWASP testing guide, extensively enumerating every feature of the application. Despite our thorough efforts, we initially found no vulnerabilities. It wasn't until the end of our assignment that I decided to delve deeper by fuzzing directories several levels deep, driven by a determination to find anything that might have been overlooked.
 
 ### Let There be Fuzz
 Utilizing various wordlists, I began probing deeper into the application’s directory structure. Interestingly, I discovered that accessing /01 redirected to a group's main page, while /02 led to a secondary page, if it existed. Encouraged by this pattern, I continued with /03, /04, and so on. This approach started revealing new, unindexed pages, some of which were admin pages that had not been identified in earlier phases of testing.
@@ -22,4 +22,4 @@ To assess the security of this notification feature, I executed a test by sendin
 '"><img src=1 onerror=console.log(document.domain)
 ```
 
-Unexpectedly, when we received the notification, the page included it without any sort of validation or sanitizarion. The JavaScript executed, confirming stored XSS. This experience underscores the indispensable value of fuzzing in penetration testing and bug bounty hunting. As pentesters, we don't have all the time that threat actors do to enumerate our target. And so, we must prioritze our activities. If we don't fuzz, we truly don't know what vulnerabilities lie hidden, waiting to be exploited. This single finding alone illustrates why thorough testing, beyond standard enumeration, is crucial for uncovering deeper security flaws. Try harder!
+Unexpectedly, when we received the notification, the page included it without any sort of validation or sanitizarion. The JavaScript executed, confirming stored XSS. This experience underscores the indispensable value of fuzzing in penetration testing and bug bounty hunting. As bug bounty hunters, we don't have all the time that threat actors do to enumerate our target. And so, we must prioritze our activities. If we don't fuzz, we truly don't know what vulnerabilities lie hidden, waiting to be exploited. This single finding alone illustrates why thorough testing, beyond standard enumeration, is crucial for uncovering deeper security flaws. Try harder!
