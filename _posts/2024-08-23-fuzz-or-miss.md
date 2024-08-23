@@ -7,7 +7,7 @@ image: assets/images/2.jpg
 featured: true
 ---
 
-Earlier this year, I was part of a team conducting a penetration test for a client's publicly accessible web application. Although I won't specify the site or CMS used, the experience highlighted a vital aspect of security testing.
+Earlier this year, I was part of a team conducting a penetration test for a client's publicly accessible web application. Although I won't specify the site or CMS, the experience highlighted a vital aspect of security testing.
 
 Over two weeks, we meticulously followed the OWASP testing guide, extensively enumerating every feature of the application. Despite our thorough efforts, we initially found no vulnerabilities. It wasn't until the end of our assignment that I decided to delve deeper by fuzzing directories several levels deep, driven by a determination to find anything that might have been overlooked.
 
