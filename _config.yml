@@ -10,6 +10,8 @@ disqus: 'bugculture-io'
 mailchimp-list: 'https://eepurl.com/iXuLUM'
 include: ["_pages"]
 permalink: /:title/
+theme: minima
+remote_theme: jekyll/minima
 
 # Authors
 authors:
@@ -21,8 +23,6 @@ authors:
     twitter: https://www.linkedin.com/in/chandler-rose
     description: "Hacker and researcher. Keen on making the digital space a little safer, one bug at a time."
   
-- theme: minima
-+ remote_theme: jekyll/minima
 
   plugins:
   - jekyll-remote-theme
