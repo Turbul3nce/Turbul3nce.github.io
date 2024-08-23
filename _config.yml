@@ -21,8 +21,11 @@ authors:
     twitter: https://www.linkedin.com/in/chandler-rose
     description: "Hacker and researcher. Keen on making the digital space a little safer, one bug at a time."
   
-# Plugins
-plugins:
+- theme: minima
++ remote_theme: jekyll/minima
+
+  plugins:
+  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
