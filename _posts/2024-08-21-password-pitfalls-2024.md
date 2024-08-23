@@ -31,7 +31,7 @@ winrm-brute --hosts 192.168.1.0/24 --usernames users.txt --passwords common_pass
 
 After some time, I checked back on winrm-brute to see if there were any hits. And wouldn’t you know it, there was a single hit! The valid username was one of the four users from the mobile app reviews. Their password was in the format of SeasonYEAR!, which seems like a common format in companies where users are required to change their password quarterly or semiannually. Just like that, I was in! But this person wasn’t just any domain user; they were a Domain Admin with a surprisingly weak password.
 <p align="center">
-  <img src="../assets/images/bad-password.jpg" alt="Do better!" title="Bad Passsword" width="80%" />
+  <img src="../assets/images/bad-password.jfif" alt="Do better!" title="Bad Passsword" width="80%" />
 </p>
 <br>
 
