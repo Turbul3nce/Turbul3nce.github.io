@@ -5,7 +5,7 @@ description: "Hacker Blog | Pentests - Bug Bounty - Research"
 logo: 'assets/images/favicon.ico'
 favicon: 'assets/images/favicon.ico'
 baseurl: 
-google_analytics: 'G-NMRXN9YDL7'
+google_analytics: G-NMRXN9YDL7
 disqus: 'bugculture-io'
 mailchimp-list: 'https://eepurl.com/iXuLUM'
 include: ["_pages"]
