@@ -10,7 +10,6 @@ disqus: 'bugculture-io'
 mailchimp-list: 'https://eepurl.com/iXuLUM'
 include: ["_pages"]
 permalink: /:title/
-theme: minima
 remote_theme: jekyll/minima
 
 # Authors
