@@ -16,7 +16,7 @@ After initiating a network scan with Nessus, I proceeded with the standard toolk
 After several days of getting nowhere, I decided it was time to target services and spray some passwords. To facilitate this attack, I needed usernames. From the bank's website and employees’ LinkedIn profiles, I compiled a list of potential usernames. Additionally, I discovered that the bank had an app on the App Store. The bank's mobile application had only four reviews, all excessively positive, likely from employees given the timing of the posts. Thus, I added these names to my usernames file. The significance of obtaining usernames from the App Store reviews will become evident later on.
 
 
-### Pray and Spray 
+### Spray and Pray
 With these usernames, I attempted to password spray using common business credentials:
 
 ```bash
