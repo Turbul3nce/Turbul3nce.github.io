@@ -32,7 +32,10 @@ Five days later, as I was nursing my post-DEFCON exhaustion and starting to feel
 These final steps involved completing a series of tutorials on how to interact with the Synack platform. Four hours later, I was done, and I fired off an email to support, letting them know I was ready.
 
 The next day, I received <b>the</b> email: my <b>Welcome Letter</b>. I was officially a member of the Synack Red Team!
-
+<p align="center">
+  <img src="../assets/images/invitation" alt="synack-invitation" title="Synack Invitation" width="80%" />
+</p>
+<br>
 Becoming part of this team was a goal of mine for two years, and full of ups and downs. If there’s one thing I’ve learned, it’s that persistence pays off. So, if you’re on a similar path, don’t give up! Keep pushing, keep learning, and one day, you’ll find yourself at the top of that hill, looking back at how far you’ve come.
 
 
