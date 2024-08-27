@@ -32,6 +32,7 @@
   gtag('config', '{{site.google_analytics}}');
 </script>
 
+{% endif %} <!-- Closing the if statement -->
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}">
