@@ -31,7 +31,7 @@ Five days later, as I was nursing my post-DEFCON exhaustion and starting to feel
 
 These final steps involved completing a series of tutorials on how to interact with the Synack platform. Four hours later, I was done, and I fired off an email to support, letting them know I was ready.
 
-The next day, I received <b>the</b> email: my <b>Welcome Letter</b>. I was officially a member of the Synack Red Team!
+The next day, I received an email: <b>My Welcome Letter</b>. I was officially a member of the Synack Red Team!
 <p align="center">
   <img src="../assets/images/invitation.png" alt="synack-invitation" title="Synack Invitation" width="80%" />
 </p>
