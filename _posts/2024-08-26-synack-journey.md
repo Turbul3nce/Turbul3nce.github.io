@@ -8,7 +8,7 @@ featured: true
 ---
 
 
-### The Journey
+### Humble Beginnings
 
 It all started two years ago when I first dipped my toes into the world of hacking. Back then, I had a few CompTIA certifications under my belt, a bunch of solved Capture The Flag (CTF) challenges, and an endless, almost insatiable need to hack all the things (still do!). You could say I was like a kid in a candy store—except the candy was machines, and the store was HackTheBox.
 
@@ -20,7 +20,7 @@ Fast forward a year. By now, I had landed my first gig as a Red Team Operator. I
 
 This time, I had more credentials to back me up. I updated my resume, polished up my application, and hit submit. Surely, this time things would be different! But alas… nothing. Again, just that lonely confirmation email, like a friend who only texts you on your birthday.
 
-# The Destination
+### The Destination
 
 After my first year as a Red Team Operator, I had leveled up. I’d learned a ton on the job, found some bugs through HackerOne, and even collected a few more certifications along the way. I was becoming more interested in bug bounty hunting, and the prospects of a private program with less competition appealed to me. So, one night, on a whim, I decided to give it one more go with Synack. I mean, third time's the charm, right? 
 
