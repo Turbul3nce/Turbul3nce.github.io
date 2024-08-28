@@ -16,14 +16,15 @@ Around this time, I was on the hunt for part-time hacking opportunities because 
 
 Now, I had no idea what it took to become a member, but that didn’t stop me. Without thinking twice, I submitted an application, attaching my resume and the few certs I had acquired. And then… I waited. And waited. And waited some more. All I got was a confirmation email that my application had been received. And then—just radio silence.
 
-Fast forward a year. By now, I had landed my first gig as a Red Team Operator. I was getting my hands dirty with some real-world experience, but I was still open to part-time work. Around the holidays, with a bit of free time on my hands and fresh off the high of passing  Red Team Operator job certification, I decided to take another shot at joining Synack.
+Fast forward a year. By now, I had landed my first gig as a Red Team Operator. I was getting my hands dirty with some real-world experience, but I was still open to part-time work. Around the holidays, with a bit of free time on my hands and fresh off the high of passing my JQR board, I decided to take another shot at applying to Synack.
 
 This time, I had more credentials to back me up. I updated my resume, polished up my application, and hit submit. Surely, this time things would be different! But alas… nothing. Again, just that lonely confirmation email, like a friend who only texts you on your birthday.
+
+# The Destination
 
 After my first year as a Red Team Operator, I had leveled up. I’d learned a ton on the job, found some bugs through HackerOne, and even collected a few more certifications along the way. I was becoming more interested in bug bounty hunting, and the prospects of a private program with less competition appealed to me. So, one night, on a whim, I decided to give it one more go with Synack. I mean, third time's the charm, right? 
 
 To my surprise, within two days, I received an email. But this wasn’t just any email—this was the email I’d been waiting for. They thought I matched what they were looking for! Cue the excitement, and maybe a little bit of dancing. The next step was a one-way interview, where I had to record my answers to a series of questions. Pretty simple, right?
-
 
 Wouldn’t you know it, I got the interview email about an hour before I was supposed to leave for DEFCON. Too excited to wait, I did what any rational person would do: I dropped everything, rushed through the interview in about 20 minutes, and then dashed out the door to catch my flight.
 
