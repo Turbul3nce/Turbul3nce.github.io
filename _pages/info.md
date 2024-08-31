@@ -45,31 +45,31 @@ comments: false
 - **Identify all open ports!**
 <br>
 
-#### 1. Information Gathering:
+#### Information Gathering:
    - **Target Details:** Collect comprehensive data on the target, including potential acquisitions.
    - **Tool:** [Crunchbase](https://www.crunchbase.com) can be used to identify acquisitions related to the target.
 
-#### 2. ASN Identification:
+#### ASN Identification:
    - **Manual Method:** Utilize [BGP HE](http://bgp.he.net) to find Autonomous System Numbers (ASNs).
    - **Automated Tools:**
      - **Metabigor:** An efficient tool for ASN reconnaissance.
      - **ASNLookup:** A straightforward ASN lookup utility.
      - **Amass Intel:** Use with `asn` flag for detailed ASN information (`amass intel -asn [ASN_NUMBER]`).
 
-#### 3. Root Domain Discovery:
+#### Root Domain Discovery:
    - **Reverse WHOIS:** Automate using DOMLink for domain linking based on WHOIS data.
    - **Ad/Analytics Relationships:** Explore relationships using [BuiltWith](https://builtwith.com) for Ad and Analytics identifiers.
    - **Google Dorks:** Utilize advanced Google search operators to find target domains.
    - **Shodan:** Employ Shodan for uncovering exposed services linked to your target.
 
-#### 4. Subdomain Enumeration
+#### Subdomain Enumeration
 
-##### a. Linked and JS Discovery:
+##### Linked and JS Discovery:
    - **Objective:** Identify all links and embedded JavaScript within client-side code.
    - **Tool:** 
      - **Burp Suite Pro:** Grab useful extensions for passive discovery: JS Miner. Conduct manual review as well.
 
-##### b. Subdomain Scraping:
+##### Subdomain Scraping:
    - **Infrastructure Sources:** Gather data from sources like Censys, DnsDumpster, and WaybackMachine.
    - **Certificate Sources:** Explore SSL certificate registries like crt.sh, CertDB, and Cert Spotter.
    - **Search Engines:** Utilize Google, Yahoo, and Baidu for domain discovery.
@@ -81,7 +81,7 @@ comments: false
      - **Shodan Parser:** Use a Shodan parer to obtain all results from Shodan.
      - **Cloud Range Monitoring:** Parse certificates to match with your target using tools like `tls.bufferover.run`.
 
-##### c. Subdomain Bruteforcing:
+##### Subdomain Bruteforcing:
    - **Tools:**
      - **Amass:** Command: `amass enum -brute -d [DOMAIN] -rf`
      - **ShuffleDNS:** A massDNS wrapper for effective subdomain brute-forcing.
@@ -91,12 +91,12 @@ comments: false
      - **Commonspeak2:** Source wordlists from GitHub.
      - **Subdomain Alterations:** Experiment with variations like `www.target.com` to `ww2.target.com`.
 
-#### 6. Port Scanning:
+#### Port Scanning:
    - **Masscan:** Quickly identify open ports (requires an IP list).
    - **dnMasscan:** Resolves domain names to IP addresses and passes them to Masscan.
    - **Nmap:** Perform a detailed analysis of discovered open ports.
 
-#### 7. GitHub Dorking:
+#### GitHub Dorking:
    - **Objectives:**
      - Identify endpoints and subdomains.
      - Create custom wordlists based on discovered technologies.
@@ -108,7 +108,7 @@ comments: false
      - Exclude unnecessary results using `NOT` keyword.
      - Identify users who may not be directly mapped to the organization by exploring dotfiles and LinkedIn profiles.
 
-#### 8. HTTPx and GoWitness:
+#### HTTPx and GoWitness:
    - Use **HTTPx** to find live hosts and maybe **Gowitness** (HTTPx can do both) to capture screenshots for visual inspection.
    - Workflow:
      1. Find live hosts
@@ -120,7 +120,7 @@ comments: false
        - ```python3 -m http.server 8080```
 
 
-#### 9. Subdomain Takeover:
+#### Subdomain Takeover:
    - **Resources:**
      - **SubOver:** Tool to check for vulnerable subdomains.
      - **Nuclei:** Run templates to check for takeover vulnerabilities.
