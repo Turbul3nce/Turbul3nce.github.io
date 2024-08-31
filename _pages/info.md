@@ -31,8 +31,8 @@ comments: false
 
 ## Navigation
 
-- [Recon Methodology](#Recon)
-- [Application Checklist](#app-checklist)
+- [Recon Methodology](#information-gathering)
+- [Application Checklist](#application-checklist)
 - [Vulnerability Testing](#vulnerability-testing)
 - [References](#references)
 
