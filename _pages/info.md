@@ -10,35 +10,26 @@ comments: false
 ## Navigation
 
 - [Methodology](#methodology)
-- [App Checklist](#app-checklist)
+- [Application Checklist](#app-checklist)
 - [Top Vulns](#top-vulns)
 - [Testing Vulns](#testing-vulns)
 - [Resources](#resources)
 
 ---
 
-## Methodology
+# Methodology
 
 ## Reconnaissance
 
 ### Core Objectives:
 - **Identify all subdomains!**
-- **Scan all ports for potential entry points.**
-
-### Essential Tools for Setup:
-- **MassDNS:** For brute-forcing subdomains.
-- **Intrigue.io:** For comprehensive reconnaissance and information gathering.
-
-### Custom Scripts To Do:
-1. Develop a Python script to search GitHub for relevant repositories and return only those with results - **Completed!**
+- **Identify all open ports.**
 
 ---
 
-## Recon Methodology
-
 ### 1. Information Gathering:
    - **Target Details:** Collect comprehensive data on the target, including potential acquisitions.
-   - **Tool:** Use [Crunchbase](https://www.crunchbase.com) to identify acquisitions related to the target.
+   - **Tool:** [Crunchbase](https://www.crunchbase.com) can be used to identify acquisitions related to the target.
 
 ### 2. ASN Identification:
    - **Manual Method:** Utilize [BGP HE](http://bgp.he.net) to find Autonomous System Numbers (ASNs).
@@ -58,22 +49,15 @@ comments: false
 #### a. Linked and JS Discovery:
    - **Objective:** Identify all links and embedded JavaScript within client-side code.
    - **Tool:** 
-     - **Burp Suite Pro:** Disable passive scanning initially to focus on manual discovery.
+     - **Burp Suite Pro:** Grab useful extensions for passive discovery: JS Miner. Conduct manual review as well.
 
 ### 5. Automation Tasks:
 
 - **Cron Jobs:**
-  - **Every 6 hours:** Run `kindling.py` - **Completed!**
-  - **Every 24 hours:** Run `fire_starter.py` - **Completed!**
-  - **Weekly:** Run `firewood.py` - **Completed!**
-
-- **Enhancements:**
-  - Added additional ports to `kindling.py` using `httprobe` - **Completed!**
-  - Valuable data on the dashboard - **Completed!**
-  - Cloud Ranges Module - **Completed!**
-  - Custom Wordlist Module - **Completed!**
-  - Application/Server Info Modules - In Progress
-  - Fix Subdomainizer Module - In Progress
+  - **Weekly:** Run `Subfinder` - **Completed!**
+  - **Weekly:** Run `Nuclei` - **Completed!**
+- **script**
+  - Used to check and report on program updates.
 
 #### b. Subdomain Scraping:
    - **Infrastructure Sources:** Gather data from sources like Censys, DnsDumpster, and WaybackMachine.
@@ -81,10 +65,10 @@ comments: false
    - **Search Engines:** Utilize Google, Yahoo, and Baidu for domain discovery.
    - **Security Databases:** Leverage databases like VirusTotal, Rapid7 Project Sonar, and SecurityTrails.
 
-   - **Recommended Tools:**
-     - **Amass and Subfinder:** Powerful tools for ASN enumeration and subdomain discovery.
-     - **GitHub Subdomain Scraping:** Use `github-subdomains.py` with varying sleep intervals to avoid rate limiting.
-     - **Shodan Parser:** Utilize `shosubgo` for parsing Shodan results.
+   - **Tools:**
+     - **Amass and Subfinder:** Powerful tools for ASN enumeration and subdomain discovery. Need API keys for more results.
+     - **GitHub Subdomain Scraping:** Use a script to scrape GitHub for subdomains.
+     - **Shodan Parser:** Use a Shodan parer to obtain all results from Shodan.
      - **Cloud Range Monitoring:** Monitor SSL sites within AWS, GCP, and Azure ranges. Parse certificates to match with your target using tools like `tls.bufferover.run`.
 
 #### c. Subdomain Bruteforcing:
@@ -115,7 +99,7 @@ comments: false
      - Identify users who may not be directly mapped to the organization by exploring dotfiles and LinkedIn profiles.
 
 ### 8. Httprobe and Eyewitness:
-   - Use **Httprobe** to find live hosts and **Eyewitness** to capture screenshots for visual inspection.
+   - Use **HTTPx** to find live hosts and maybe **Gowitness** (HTTPx can do both) to capture screenshots for visual inspection.
 
 ### 9. Subdomain Takeover:
    - **Resources:**
