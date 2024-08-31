@@ -130,7 +130,7 @@ comments: false
 
 ---
 
-## Application Checklist - Getting Started
+## Application Checklist
 
 <b>Ask yourself these questions and note down the asnwers</b>
 <br>
