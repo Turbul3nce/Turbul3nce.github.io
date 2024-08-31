@@ -86,7 +86,7 @@ comments: false
      - **Amass:** Command: `amass enum -brute -d [DOMAIN] -rf`
      - **ShuffleDNS:** A massDNS wrapper for effective subdomain brute-forcing.
      - **Wordlists:**
-       - **Tailored Wordlists:** Generate using TomNomNom and CeWL.
+       - **Tailored Wordlists:** Generate using TomNomNom and CeWL. Use SecLists.
        - **Massive Wordlists:** Use comprehensive lists like JHaddix's `all.txt`.
      - **Commonspeak2:** Source wordlists from GitHub.
      - **Subdomain Alterations:** Experiment with variations like `www.target.com` to `ww2.target.com`.
