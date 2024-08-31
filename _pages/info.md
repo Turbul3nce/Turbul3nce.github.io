@@ -42,8 +42,6 @@ comments: false
 - **Identify all subdomains!**
 - **Identify all open ports!**
 
----
-
 #### 1. Information Gathering:
    - **Target Details:** Collect comprehensive data on the target, including potential acquisitions.
    - **Tool:** [Crunchbase](https://www.crunchbase.com) can be used to identify acquisitions related to the target.
