@@ -121,7 +121,6 @@ comments: false
 
 #### 9. Subdomain Takeover:
    - **Resources:**
-     - **Can-I-Take-Over-XYZ:** Database by EdOverflow listing subdomain takeover techniques.
      - **SubOver:** Tool to check for vulnerable subdomains.
      - **Nuclei:** Run templates to check for takeover vulnerabilities.
 
