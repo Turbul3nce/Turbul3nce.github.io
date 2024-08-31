@@ -43,6 +43,7 @@ comments: false
 #### Core Objectives:
 - **Identify all subdomains!**
 - **Identify all open ports!**
+<br>
 
 #### 1. Information Gathering:
    - **Target Details:** Collect comprehensive data on the target, including potential acquisitions.
@@ -78,7 +79,7 @@ comments: false
      - **Amass and Subfinder:** Powerful tools for ASN enumeration and subdomain discovery. Need API keys for more results.
      - **GitHub Subdomain Scraping:** Use a script to scrape GitHub for subdomains.
      - **Shodan Parser:** Use a Shodan parer to obtain all results from Shodan.
-     - **Cloud Range Monitoring:** Monitor SSL sites within AWS, GCP, and Azure ranges. Parse certificates to match with your target using tools like `tls.bufferover.run`.
+     - **Cloud Range Monitoring:** Parse certificates to match with your target using tools like `tls.bufferover.run`.
 
 ##### c. Subdomain Bruteforcing:
    - **Tools:**
