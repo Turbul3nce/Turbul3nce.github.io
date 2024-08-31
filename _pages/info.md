@@ -125,17 +125,18 @@ comments: false
      - **Nuclei:** Run templates to check for takeover vulnerabilities.
 
 
-[Back to top](#resources)
+[Back to top](#navigation)
 
 ---
 
 ## Application Checklist - Getting Started
 
 1. What technology stack and programming languages are used in the application?
-2. What type of server or hosting environment is powering the application?
-3. Is there a Web Application Firewall (WAF) in place?
-4. What third-party libraries and frameworks are integrated? Are there known vulnerabilities associated with these?
-5. What authentication mechanisms are implemented?
+2. What is the intended use of the application?
+3. What type of server or hosting environment is powering the application?
+4. Is there a Web Application Firewall (WAF) in place?
+5. What third-party libraries and frameworks are integrated? Are there known vulnerabilities associated with these?
+6. What authentication mechanisms are implemented?
 7. What objects or data structures are utilized within the application?
 8. How are sessions created, maintained, and managed?
 9. Are there any useful comments or metadata within the code?
@@ -151,7 +152,7 @@ comments: false
 19. Is CAPTCHA or another bot detection mechanism used?
 20. Are WebSockets or similar technologies employed for real-time communication?
 21. Is the source code or any part of it publicly accessible?
-[Back to top](#resources)
+[Back to top](#navigation)
 
 ---
 
@@ -168,7 +169,7 @@ Note: Add more vuln specfic notes from OneNote
 **Step 4:** Launch the attack.
 
 
-[Back to top](#resources)
+[Back to top](#navigation)
 
 ---
 
@@ -176,6 +177,6 @@ Note: Add more vuln specfic notes from OneNote
 
 [OWASP Top 10](https://owasp.org/www-project-top-ten/)
 
-[Back to top](#resources)
+[Back to top](#navigation)
 
 ---
