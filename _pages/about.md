@@ -10,7 +10,7 @@ comments: true
 
 <p>From Army boots to cybersecurity roots, I've spent the last two years diving headfirst into the world of security. Starting with CTFs and rapidly expanding my expertise, I balance my life as a red team operator, security engineer, and researcher with being a student and a dedicated father. Passionate about uncovering vulnerabilities as a bug bounty hunter, I'm on a mission to Hack The Planet.</p>
 
-[LinkedIn Profile](https://www.linkedin.com/in/chandler-rose)
+<a href="https://www.linkedin.com/in/chandler-rose">LinkedIn Profile</a>
 
 </div>
 
