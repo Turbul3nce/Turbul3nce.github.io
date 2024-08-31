@@ -202,11 +202,11 @@ Note: Add more vuln specfic notes from OneNote
     `Database`
 - Common Sinks:
     `document.write()`
-        ~ Works with <script>
+      - Works with <script>
     `document.writeln()`
     `document.domain`
     `someDOMElement.innerHTML`
-        ~ Works with <img> or <iframe>
+      - Works with <img> or <iframe>
     `someDOMElement.outerHTML`
     `someDOMElement.insertAdjacentHTML`
     `someDOMElement.onevent`
@@ -215,8 +215,8 @@ Note: Add more vuln specfic notes from OneNote
     `append()`
     `animate()`
     `attr()`
-        ~ Works with HTML tags that can use the href attribute
-        ~ Example: Set return URL to javascript:alert('XSS')
+      - Works with HTML tags that can use the href attribute
+      - Example: Set return URL to javascript:alert('XSS')
     `insertAfter()`
     `insertBefore()`
     `before()`
@@ -238,15 +238,15 @@ Note: Add more vuln specfic notes from OneNote
         1. Send MD5 sum through the source
         2. Search HTML in Dev Tools for MD5 sum (Ctrl + F)
         3. Refine payload to deliver attack
-    ~ JavaScript Execution Sinks -- Hard
+    - JavaScript Execution Sinks -- Hard
         1. Search JavaScript code for any sources being referenced (Ctrl + Shift + F)
         2. Add breakpoints and manually follow how the source's value is being used
         3. If source's value is assigned to a variable, search for how that variable is used
         4. If that variable is passed to a sink, hover over the variable to show it's value before it's passed to the sink
         5. Refine payload to deliver attack
 - Angular
-    ~ Look for the "ng-app" attribute
-    ~ All JavaScript enclosed in the HTML tags labelled ng-app will be run automatically by Angular
+    - Look for the "ng-app" attribute
+    - All JavaScript enclosed in the HTML tags labelled ng-app will be run automatically by Angular
     Payload: `{{$on.constructor('alert(1)')()}}`
 - When JavaScript eval() method evaluates a JSON object
     Payload: `\"-alert(1)}//`
@@ -254,7 +254,7 @@ Note: Add more vuln specfic notes from OneNote
 ##### Contexts
 - Between HTML tags
     EX: <p>[USER CONTROLLED INPUT]</p>
-    ~ Attacker must introduce new HTML tags to trigger JavaScript
+    - Attacker must introduce new HTML tags to trigger JavaScript
     Step 1: Fuzz for HTML tags filtered by WAF
     Step 2: Fuzz for attributes/events filtered by WAF
     Step 3: Fuzz for payloads filtered by WAF
@@ -264,17 +264,17 @@ Note: Add more vuln specfic notes from OneNote
 
 Common CSP Controls:
     - Content-Security-Policy Header:
-        ~ script-src 'self' -- Only scripts from the same origin domain can be loaded
-        ~ script-src https://scripts.normal-website.com -- Only scripts from a specific domain can be loaded
+        - script-src 'self' -- Only scripts from the same origin domain can be loaded
+        - script-src https://scripts.normal-website.com -- Only scripts from a specific domain can be loaded
     - Nonce (random value):
-        ~ Same value must be used in the script tag, otherwise the script won't execute
-        ~ Must be securely generated each time the page loads
-        ~ Must not be guessable
+        - Same value must be used in the script tag, otherwise the script won't execute
+        - Must be securely generated each time the page loads
+        - Must not be guessable
     - Hash (hash value of script being loaded)
-        ~ Script will not load if it is changed since the hash will no longer match
+        - Script will not load if it is changed since the hash will no longer match
 - Most CSPs don't block <img> tags 
 - Dangling Markup Injection can be used to bypass CSP
-    ~ Inject HTML tags with open attr quotes so sensitive data (CSRF Token) is sent to attacker's server
+    - Inject HTML tags with open attr quotes so sensitive data (CSRF Token) is sent to attacker's server
     Step 1: Identify name of input field to exploit
     Step 2: Add GET parameter in URL with corresponding name
     Step 3: Value of malicious parameter will be the payload
