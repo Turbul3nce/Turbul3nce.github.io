@@ -8,7 +8,9 @@ comments: false
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-![The Hunt](../assets/images/Hunting-for-Bugs.png)
+<p align="center">
+  <img src="../assets/images/Hunting-for-Bugs.png" alt="bug-hunting" title="Bug Hunting" width="80%" />
+</p>
 
 </div>
 
