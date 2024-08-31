@@ -66,14 +66,6 @@ comments: false
    - **Tool:** 
      - **Burp Suite Pro:** Grab useful extensions for passive discovery: JS Miner. Conduct manual review as well.
 
-#### 5. Automation Tasks:
-
-- **Cron Jobs:**
-  - **Weekly:** Run `Subfinder` - **Completed!**
-  - **Weekly:** Run `Nuclei` - **Completed!**
-- **script**
-  - Used to check and report on program updates.
-
 ##### b. Subdomain Scraping:
    - **Infrastructure Sources:** Gather data from sources like Censys, DnsDumpster, and WaybackMachine.
    - **Certificate Sources:** Explore SSL certificate registries like crt.sh, CertDB, and Cert Spotter.
