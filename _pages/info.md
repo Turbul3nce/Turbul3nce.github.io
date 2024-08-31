@@ -132,7 +132,7 @@ comments: false
 
 ## Application Checklist
 
-<b>Ask yourself these questions and note down the asnwers</b>
+<b>Ask yourself these questions during enumeration.</b>
 <br>
 1. What is the intended use of the application?
 2. What technology stack and programming languages are used in the application?
