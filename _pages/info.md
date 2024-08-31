@@ -109,6 +109,15 @@ comments: false
 
 #### 8. HTTPx and GoWitness:
    - Use **HTTPx** to find live hosts and maybe **Gowitness** (HTTPx can do both) to capture screenshots for visual inspection.
+   - Workflow:
+     1. Find live hosts
+        - ```cat domains.txt | httpx -silent -o live_hosts.txt```
+     3. Take screenshots of the live hosts
+        - ```gowitness file -f live_hosts.txt --timeout 10```
+     3. Serve the screenshots for inspection
+       - ```cd gowitness```
+       - ```python3 -m http.server 8080```
+
 
 #### 9. Subdomain Takeover:
    - **Resources:**
@@ -123,6 +132,8 @@ comments: false
 
 ## Application Checklist - Getting Started
 
+<b>Ask yourself these questions and note down the asnwers</b>
+<br>
 1. What is the intended use of the application?
 2. What technology stack and programming languages are used in the application?
 4. What type of server or hosting environment is powering the application?
