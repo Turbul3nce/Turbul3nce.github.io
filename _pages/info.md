@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bug Bounty Tips
+title: Bug Bounty Guide
 permalink: /info
 comments: false
 ---
