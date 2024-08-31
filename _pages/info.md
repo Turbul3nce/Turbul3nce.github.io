@@ -27,11 +27,10 @@ comments: false
 
 ## Navigation
 
-- [Methodology](#methodology)
+- [Recon Methodology](#Recon)
 - [Application Checklist](#app-checklist)
-- [Top Vulns](#top-vulns)
-- [Testing Vulns](#testing-vulns)
-- [References](#resources)
+- [Vulnerability Testing](#vulnerability-testing)
+- [References](#references)
 
 ---
 
@@ -128,7 +127,7 @@ comments: false
 
 ---
 
-## App Checklist - Getting Started
+## Application Checklist - Getting Started
 
 1. What technology stack and programming languages are used in the application?
 2. What type of server or hosting environment is powering the application?
@@ -154,9 +153,9 @@ comments: false
 
 ---
 
-## Testing Vulns
+## Vulnerability Testing
 
-Note: Add vuln specfic notes from OneNote
+Note: Add more vuln specfic notes from OneNote
 
 #### HTTP Request Smuggling
 
