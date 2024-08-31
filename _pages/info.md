@@ -144,6 +144,8 @@ comments: false
 19. Is CAPTCHA or another bot detection mechanism used?
 20. Are WebSockets or similar technologies employed for real-time communication?
 21. Is the source code or any part of it publicly accessible?
+
+
 [Back to top](#navigation)
 
 ---
