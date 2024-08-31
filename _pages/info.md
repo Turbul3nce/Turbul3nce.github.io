@@ -91,7 +91,7 @@ comments: false
      - **Commonspeak2:** Source wordlists from GitHub.
      - **Subdomain Alterations:** Experiment with variations like `www.target.com` to `ww2.target.com`.
 
-#### 6. Port Scanning and Analysis:
+#### 6. Port Scanning:
    - **Masscan:** Quickly identify open ports (requires an IP list).
    - **dnMasscan:** Resolves domain names to IP addresses and passes them to Masscan.
    - **Nmap:** Perform a detailed analysis of discovered open ports.
