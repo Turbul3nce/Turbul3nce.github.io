@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Chandler Rose
+title: Bug Bounty Tips
 permalink: /info
 comments: false
 ---
