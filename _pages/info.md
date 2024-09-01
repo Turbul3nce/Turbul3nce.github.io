@@ -77,6 +77,7 @@ comments: false
 
    - **Tools:**
      - **Amass and Subfinder:** Powerful tools for ASN enumeration and subdomain discovery. Need API keys for more results.
+     - **Tool CMD:** ```amass enum -active -df domains.txt -o output.txt```
      - **GitHub Subdomain Scraping:** Use a script to scrape GitHub for subdomains.
      - **Shodan Parser:** Use a Shodan parer to obtain all results from Shodan.
      - **Cloud Range Monitoring:** Parse certificates to match with your target using tools like `tls.bufferover.run`.
