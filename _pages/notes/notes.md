@@ -1,6 +1,6 @@
 ---
 layout: page
 title: Bug Bounty Notes
-permalink: /notes
+permalink: /guides
 comments: false
 ---
