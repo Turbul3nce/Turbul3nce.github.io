@@ -37,10 +37,6 @@ comments: false
 - **Identify all open ports!**
 <br>
 
-#### Information Gathering:
-   - **Target Details:** Collect comprehensive data on the target, including potential acquisitions.
-   - **Tool:** [Crunchbase](https://www.crunchbase.com) can be used to identify acquisitions related to the target.
-
 #### ASN Identification:
    - **Manual Method:** Utilize [BGP HE](http://bgp.he.net) to find Autonomous System Numbers (ASNs).
    - **Automated Tools:**
