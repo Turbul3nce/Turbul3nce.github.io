@@ -35,7 +35,7 @@ comments: false
 #### Objectives:
 - **Identify all subdomains!**
 - **Identify all open ports!**
-<br>
+
 
 #### ASN Identification:
    - **Manual Method:** Utilize [BGP HE](http://bgp.he.net) to find Autonomous System Numbers (ASNs).
