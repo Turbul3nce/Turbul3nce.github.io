@@ -40,13 +40,11 @@ comments: false
 #### ASN Identification:
    - **Manual Method:** Utilize [BGP HE](http://bgp.he.net) to find Autonomous System Numbers (ASNs).
    - **Automated Tools:**
-     - **Metabigor:** An efficient tool for ASN reconnaissance.
      - **ASNLookup:** A straightforward ASN lookup utility.
      - **Amass Intel:** Use with `asn` flag for detailed ASN information (`amass intel -asn [ASN_NUMBER]`).
 
 #### Root Domain Discovery:
    - **Reverse WHOIS:** Automate using DOMLink for domain linking based on WHOIS data.
-   - **Ad/Analytics Relationships:** Explore relationships using [BuiltWith](https://builtwith.com) for Ad and Analytics identifiers.
    - **Google Dorks:** Utilize advanced Google search operators to find target domains.
    - **Shodan:** Employ Shodan for uncovering exposed services linked to your target.
 
@@ -55,7 +53,7 @@ comments: false
 ##### Linked and JS Discovery:
    - **Objective:** Identify all links and embedded JavaScript within client-side code.
    - **Tool:** 
-     - **Burp Suite Pro:** Grab useful extensions for passive discovery: JS Miner. Conduct manual review as well.
+     - **Burp Suite:** Grab useful extensions for passive discovery: JS Miner. Manual review.
 
 ##### Subdomain Scraping:
    - **Infrastructure Sources:** Gather data from sources like Censys, DnsDumpster, and WaybackMachine.
