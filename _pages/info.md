@@ -40,7 +40,7 @@ comments: false
 
 ## Recon
 
-#### Core Objectives:
+#### Objectives:
 - **Identify all subdomains!**
 - **Identify all open ports!**
 <br>
