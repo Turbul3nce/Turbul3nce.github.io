@@ -17,24 +17,16 @@ comments: false
 <div class="col-md-4">
 
 <div class="sticky-top sticky-top-80">
-<h5>Buy me a coffee</h5>
-
-<p>Thank you for your support!</p>
-
-<a target="_blank" href="https://buymeacoffee.com/rosehacksls" class="btn btn-danger">Buy me a coffee</a>
-
-</div>
-</div>
-</div>
-
----
-
 ## Navigation
 
 - [Recon Methodology](#information-gathering)
 - [Application Checklist](#application-checklist)
 - [Vulnerability Testing](#vulnerability-testing)
 - [References](#references)
+
+</div>
+</div>
+</div>
 
 ---
 
