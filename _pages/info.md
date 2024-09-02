@@ -18,12 +18,13 @@ comments: false
 
 <div class="sticky-top sticky-top-80">
 
-## Navigation
-
-- [Recon Methodology](#information-gathering)
-- [Application Checklist](#application-checklist)
-- [Vulnerability Testing](#vulnerability-testing)
-- [References](#references)
+<h2>Navigation</h2>
+<ul>
+    <li><a href="#information-gathering">Recon Methodology</a></li>
+    <li><a href="#application-checklist">Application Checklist</a></li>
+    <li><a href="#vulnerability-testing">Vulnerability Testing</a></li>
+    <li><a href="#references">References</a></li>
+</ul>
 
 </div>
 </div>
