@@ -144,6 +144,8 @@ comments: false
 20. Is CAPTCHA or another bot detection mechanism used?
 21. Are WebSockets or similar technologies employed for real-time communication?
 22. Is the source code or any part of it publicly accessible?
+23. Are there any gadgets we can pair with vulnerabilities to show impact?
+
 
 
 [Back to top](#navigation)
