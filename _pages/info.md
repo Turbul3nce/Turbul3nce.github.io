@@ -17,6 +17,7 @@ comments: false
 <div class="col-md-4">
 
 <div class="sticky-top sticky-top-80">
+
 ## Navigation
 
 - [Recon Methodology](#information-gathering)
