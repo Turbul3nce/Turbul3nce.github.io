@@ -5,19 +5,6 @@ permalink: /info
 comments: false
 ---
 
-<div class="row justify-content-between">
-<div class="col-md-8 pr-5">
-
-<p align="center">
-  <img src="../assets/images/Hunting-for-Bugs.png" alt="bug-hunting" title="Bug Hunting" width="80%" />
-</p>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="sticky-top sticky-top-80">
-
 <h2>Navigation</h2>
 <ul>
   <li><a href="#information-gathering">Recon Methodology</a></li>
@@ -36,6 +23,18 @@ comments: false
   <li><a href="#references">References</a></li>
 </ul>
 
+<div class="row justify-content-between">
+<div class="col-md-8 pr-5">
+
+<p align="center">
+  <img src="../assets/images/Hunting-for-Bugs.png" alt="bug-hunting" title="Bug Hunting" width="80%" />
+</p>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="sticky-top sticky-top-80">
 
 </div>
 </div>
