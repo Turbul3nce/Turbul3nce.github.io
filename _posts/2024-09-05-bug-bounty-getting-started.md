@@ -30,6 +30,10 @@ There are plenty of solid public prgrams to start hacking on out there. [HackerO
   <img src="../assets/images/bug_bounty_scope.png" alt="Burp-Intruder" title="Burp Intruder Settings" width="80%" />
 </p>
 <br>
-Furthermore, you'll want to check out the details on a target to see what sort of vulnerabiltiies are in scope. If the target had a huge list of vulnerabilties they do not accept, maybe this isn't a very beginner friendly progra. 
+Furthermore, you'll want to check out the details on a target to see what sort of vulnerabiltiies are in scope. If the target had a huge list of vulnerabilties they do not accept, maybe this isn't a very beginner friendly program. Now that you have finally found a suitable target, we can get to the good stuff!
+
+## Let's Hack
+
+In this section, I want to discuss hunting and methodology. I want get that technical. There's plenty of other resources out there for that (including this website). What I think is important here is to quickly understand the recon and focusing on one or two specific vulnerabilties. During recon, your goal should be to gather as many subdomains and open ports from the targets in scope. [Project discovery](https://github.com/projectdiscovery) has all the tools you will need for this process with a few exceptions, but it is a great place to start for recon tooling. Once you've built a solid methodology for recon, you should choose one or two vulnerabilities to become very familiar with. People generally start with vulnerabilities, such as XSS, information disclosures, IDORs, etc. It really doesn't matter which ones you choose. What matters is that you understand them through and through. Do as many POrtswigger labs as you can. Take all the notes! Build out scripts and nuclei templates that automate search for them. Understand the ins and outs. You should know what the developer was thinking when he introduced the bug into the code.
 
 Post about how to get into bug bounty as a complete beginner. I started Bug bounty a week ago and within that time, I have already racked up several several bugs that have been triaged. Why are you doing bug bounty? for money, to improve your resume job search, etc? Know your tools, proper training, oppertunities on Hackerone (bounty and VDP), choosing scope and expanding attack surface. targeting specififc application and where to go from there.
