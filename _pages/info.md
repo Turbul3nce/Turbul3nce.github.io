@@ -1,8 +1,9 @@
 ---
-layout: page
-title: Bug Bounty Guide
+layout: post
+title:  Info
+author: chandler
+image: assets/images/bug-guide.png
 permalink: /info
-comments: false
 ---
 
 <h2>Navigation</h2>
@@ -19,10 +20,6 @@ comments: false
           <li><a href="/notes/program-links">Bug Bounty Programs</a></li>
         </ul>
       </td>
-      <!-- Image on the right -->
-        <p align="center">
-          <img src="../assets/images/bug-guide.png" alt="bug-hunting" title="Bug Hunting" width="35%" />
-        </p>
       </td>
     </tr>
   </table>
