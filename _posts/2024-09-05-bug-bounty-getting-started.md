@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bug Hunting: Getting Started"
+title:  "Bug Bounty: Getting Started"
 author: chandler
 categories: [ bug bounty,]
 image: assets/images/nervous-hacker.png
