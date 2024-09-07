@@ -3,7 +3,7 @@ layout: post
 title:  "My Journey to Synack"
 author: chandler
 categories: [ bug bounty ]
-image: assets/images/3.jpg
+image: assets/images/3.png
 featured: false
 ---
 
