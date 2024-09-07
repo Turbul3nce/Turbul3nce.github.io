@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Chandler Rose
+title: Vulnerability Testing
 permalink: /notes/vuln-testing
 comments: true
 ---
 
-## Navigation 
+## Navigation
 
 #### Quick notes for testing
 <li><a href="#sqli">SQL Injection</a></li>
