@@ -8,7 +8,7 @@ featured: true
 ---
 
 ### Background
-Earlier this year, I was on a contract to conduct a penetration test for a small bank, which will remain unnamed. The scope of the test focused on auditing their local network to determine what an attacker could achieve with close network access but no initial credentials to their Active Directory.
+Earlier this year, I was on a pentest contract for a small bank, which will remain unnamed. The scope of the test focused on auditing their local network to determine what an attacker could achieve with close network access but no initial credentials to their Active Directory.
 
 After initiating a network scan with Nessus, I proceeded with the standard toolkit for a local penetration test—running `nmap`, leveraging `responder`, packet sniffing with `wireshark`, examining printers/MFPs, and scanning services with `CrackMapExec`. Despite these efforts, no significant vulnerabilities emerged. The printers showed some weaknesses, but nothing that could facilitate privilege escalation. This was unsurprising, as the bank had several pentests in the past.
 
