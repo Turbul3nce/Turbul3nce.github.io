@@ -17,6 +17,7 @@ comments: false
           <li><a href="/notes/app-checklist">Application Checklist</a></li>
           <li><a href="/notes/vuln-testing">Vulnerability Testing</a></li>
           <li><a href="/notes/auto-scripts">Automation Scripts</a></li>
+          <li><a href="/notes/references">References</a></li>
         </ul>
       </td>
       <!-- Image on the right -->
