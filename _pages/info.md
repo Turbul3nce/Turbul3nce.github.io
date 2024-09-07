@@ -17,10 +17,10 @@ comments: false
           <li>
             <a href="#vulnerability-testing">Vulnerability Testing</a>
             <ul>
-              <li><a href="#sqli">SQL Injection (SQLi)</a></li>
-              <li><a href="#xss">Cross-Site Scripting (XSS)</a></li>
+              <li><a href="#sqli">SQL Injection</a></li>
+              <li><a href="#xss">Cross-Site Scripting</a></li>
               <li><a href="#host-header-injection">Host Header Injection</a></li>
-              <li><a href="#cmdi">Command Injection (CMDi)</a></li>
+              <li><a href="#cmdi">Command Injection</a></li>
               <li><a href="#improper-authentication">Improper Authentication</a></li>
               <li><a href="#csrf">Cross-Site Request Forgery (CSRF)</a></li>
             </ul>
@@ -31,7 +31,7 @@ comments: false
 <!-- Image on the right -->
       <td>
         <p align="center">
-          <img src="../assets/images/Hunting-for-Bugs.png" alt="bug-hunting" title="Bug Hunting" width="75%" />
+          <img src="../assets/images/bug-guide.png" alt="bug-hunting" title="Bug Hunting" width="75%" />
         </p>
       </td>
     </tr>
