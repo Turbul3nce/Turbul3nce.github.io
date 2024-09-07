@@ -38,6 +38,23 @@ comments: false
   </table>
 </div>
 
+<script>
+  // Get all elements with class 'dropdown-btn'
+  var dropdownBtns = document.querySelectorAll('.dropdown-btn');
+  
+  dropdownBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      // Toggle the dropdown content visibility
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
+        dropdownContent.style.display = "block";
+      } else {
+        dropdownContent.style.display = "none";
+      }
+    });
+  });
+</script>
+
 ---
 
 ## References
