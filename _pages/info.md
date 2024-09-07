@@ -13,25 +13,16 @@ comments: false
       <td>
         <ul>
           <li><a href="/notes/recon-methodology">Recon Methodology</a></li>
-          <li><a href="#application-checklist">Application Checklist</a></li>
-          <li>
-            <a href="#vulnerability-testing">Vulnerability Testing</a>
-            <ul>
-              <li><a href="#sqli">SQL Injection</a></li>
-              <li><a href="#xss">Cross-Site Scripting</a></li>
-              <li><a href="#host-header-injection">Host Header Injection</a></li>
-              <li><a href="#cmdi">Command Injection</a></li>
-              <li><a href="#improper-authentication">Improper Authentication</a></li>
-              <li><a href="#csrf">Cross-Site Request Forgery (CSRF)</a></li>
-            </ul>
-          </li>
-          <li><a href="#references">Bug Bounty Programs</a></li>
+          <li><a href="/notes/app-checklist">Application Checklist</a></li>
+          <li><a href="/notes/auto-scripts">Automation Scripts</a></li>
+          <li><a href="/notes/vuln-testing">Vulnerability Testing</a></li>
+          <li><a href="/notes/program-links">Bug Bounty Programs</a></li>
         </ul>
       </td>
 <!-- Image on the right -->
       <td>
         <p align="center">
-          <img src="../assets/images/bug-guide.png" alt="bug-hunting" title="Bug Hunting" width="50%" />
+          <img src="../assets/images/bug-guide.png" alt="bug-hunting" title="Bug Hunting" width="20%" />
         </p>
       </td>
     </tr>
