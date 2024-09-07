@@ -22,7 +22,6 @@ comments: false
           <li><a href="#csrf">Cross-Site Request Forgery (CSRF)</a></li>
         </ul>
       </li>
-      <li><a href="#references">References</a></li>
     </ul>
   </div>
 
@@ -33,6 +32,7 @@ comments: false
   </div>
 </div>
 ---
+
 ## References
 
 [OWASP Top 10](https://owasp.org/www-project-top-ten/)
