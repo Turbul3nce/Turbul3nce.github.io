@@ -15,7 +15,7 @@ comments: true
 
 <h5><a href="https://hackerone.com/turbul3nce?type=user">HackerOne</a></h5>
 
-<h5><a href="https://www.youtube.com/@rosehacksyoutube">YouTube</a></h5> <--<b>Not active.. For now.</b>
+<h5><a href="https://www.youtube.com/@rosehacksyoutube">YouTube</a><--<b>Not active.. For now.</b></h5>
 </div>
 
 <div class="col-md-4">
