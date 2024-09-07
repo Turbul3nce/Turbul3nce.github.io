@@ -3,7 +3,7 @@ layout: post
 title:  "Fuzz or Miss: Uncovering Hidden Bugs"
 author: chandler
 categories: [ pentests, bug bounty]
-image: assets/images/2.jpg
+image: assets/images/2.png
 featured: false
 ---
 
