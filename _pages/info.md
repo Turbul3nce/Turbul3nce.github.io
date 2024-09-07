@@ -25,13 +25,13 @@ comments: false
               <li><a href="#csrf">Cross-Site Request Forgery (CSRF)</a></li>
             </ul>
           </li>
-          <li><a href="#references"></a>Bug Bounty Programs</li>
+          <li><a href="#references">Bug Bounty Programs</a></li>
         </ul>
       </td>
 <!-- Image on the right -->
       <td>
         <p align="center">
-          <img src="../assets/images/Hunting-for-Bugs.png" alt="bug-hunting" title="Bug Hunting" width="92%" />
+          <img src="../assets/images/Hunting-for-Bugs.png" alt="bug-hunting" title="Bug Hunting" width="100%" />
         </p>
       </td>
     </tr>
