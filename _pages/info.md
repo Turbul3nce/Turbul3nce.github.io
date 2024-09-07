@@ -20,7 +20,7 @@ comments: false
         </ul>
       </td>
       <!-- Image on the right -->
-      <td style="width:40%;">
+      <td style="width:60%;">
   <p align="center">
     <img src="../assets/images/bug-guide.png" alt="bug-hunting" title="Bug Hunting" width="600px" />
   </p>
