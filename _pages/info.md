@@ -7,10 +7,10 @@ comments: false
 
 <h2>Navigation</h2>
 <div>
-  <table style="width:150%;">
+  <table style="width:100%;">
     <tr>
       <!-- Navigation menu on the left -->
-      <td style="width:100%;">
+      <td style="width:65%;">
         <ul>
           <li><a href="/notes/recon-methodology">Recon Methodology</a></li>
           <li><a href="/notes/app-checklist">Application Checklist</a></li>
@@ -20,9 +20,8 @@ comments: false
         </ul>
       </td>
       <!-- Image on the right -->
-      <td style="width:50%;">
         <p align="center">
-          <img src="../assets/images/bug-guide.png" alt="bug-hunting" title="Bug Hunting" width="50%" />
+          <img src="../assets/images/bug-guide.png" alt="bug-hunting" title="Bug Hunting" width="35%" />
         </p>
       </td>
     </tr>
