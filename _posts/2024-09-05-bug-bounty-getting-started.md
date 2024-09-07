@@ -17,6 +17,7 @@ After finishing the course, I started my bug bounty journey on HackerOne. Two we
 <p align="center">
   <img src="https://i.imgflip.com/92oh7v.jpg" alt="Confused" title="Where's The Bounty" width="80%" />
 </p>
+<br>
 
 ## What to Know?
 
@@ -31,10 +32,11 @@ Let’s pretend you’re not a total newbie. Maybe you’ve got a few hacker cer
 4. Approach it with an open mindset and a solid methodology that you can build upon as you hunt.
 
 5. Bug bounty hunting is like an Easter egg hunt! Not all targets are vulnerable, and you may spend an ungodly amount of time on one target only to find absolutely nothing. And that’s okay, because your next target may have a bug around every corner, making it all worth it.
+<br>
 
-## Where to start?
+## Where to Start?
 
-There are plenty of solid public programs to start hacking on. [HackerOne](https://www.hackerone.com/), [BugCrowd](https://www.bugcrowd.com/), [Integriti](https://www.intigriti.com/), etc.There are also private programs you can apply for, like [Synack](https://www.synack.com/).With these in mind, choose a program, sign up, and move on to the next step: selecting a target! Arguably, one of the most important parts of starting in bug bounty is choosing your target. As a beginner, you’ll want to select a target appropriate for your experience level. Starting with a target offering rewards from $10k to $200k likely won’t be a very fruitful hacking experience for you.
+There are plenty of solid public programs to start hacking on. [HackerOne](https://www.hackerone.com/), [BugCrowd](https://www.bugcrowd.com/), [Integriti](https://www.intigriti.com/), etc. There are also private programs you can apply for, like [Synack](https://www.synack.com/).With these in mind, choose a program, sign up, and move on to the next step: selecting a target! Arguably, one of the most important parts of starting in bug bounty is choosing your target. As a beginner, you’ll want to select a target appropriate for your experience level. Starting with a target offering rewards from $10k to $200k likely won’t be a very fruitful hacking experience for you.
 
 This is where I’d suggest starting with a Vulnerability Disclosure Program (VDP) (cue eye rolls and echoes of “free labor?!"). Of course, this is optional, and it comes down to a question you need to ask yourself: Why are you doing this? Are you here to make money? Improve your resume and skills? Or maybe just for fun? Either way, it’s up to you. I’m just offering the easiest path to finding your first bug. 
 
@@ -50,16 +52,17 @@ Furthermore, you’ll want to review the details of a target to see what types o
 Here’s a quick lead on a target I always recommend to people just getting started: the Department of Defense has a bug bounty program through HackerOne. Their scope is massive—pretty much any .mil domain is in scope—and they generally accept bugs that other programs might not. Just to give you an idea of how "beginner-friendly" this target is based on statistics, in the last 90 days, their program has received over 1,700 bug submissions. Crazy, right? But a fantastic opportunity for newcomers nonetheless.
 
 Now that you’ve found a suitable target, we can get to the good stuff!
+<br> 
 
-## Let's Hack
+## The Fun Part
 
-In this section, I want to talk about hunting and methodology. I won’t get too technical—there are plenty of other resources for that (including this website). What I think is important here is quickly understanding recon and focusing on one or two specific vulnerabilities. During recon, your goal should be to gather as many subdomains and open ports from the targets in scope. 
+In this section, I want to talk about hunting methodology. I won’t get too technical—there are plenty of other resources for that (including this website). What I think is important here is quickly understanding recon and focusing on one or two specific vulnerabilities. During recon, your goal should be to gather as many subdomains and open ports from the targets in scope. 
 
-[Project discovery](https://github.com/projectdiscovery) has all the tools you’ll need for this process, with a few exceptions, but it’s a great place to start for recon tooling. Once you’ve built a solid methodology for recon, you should focus on one or two vulnerabilities to become very familiar with. 
+[Project Discovery](https://github.com/projectdiscovery) has all the tools you’ll need for this process, with a few exceptions, but it’s a great place to start for recon tooling. Once you’ve built a solid methodology for recon, you should focus on one or two vulnerabilities to become very familiar with. 
 
 People generally start with vulnerabilities like XSS, information disclosures, or IDORs. It doesn’t matter which ones you choose—what’s important is that you understand them thoroughly. Do as many PortSwigger labs as you can. Take all the notes! Build scripts and Nuclei templates to automate the search for these vulnerabilities. Understand the vulnerabilities so deeply that you can almost anticipate what the developer was thinking when they introduced the bug into the code. Again, PortSwigger is an excellent resource for gaining this level of knowledge. Do the labs and take detailed notes. 
 
-Another worthwhile step, though not necessary, would be to learn some frontend or backend programming (depending on the vulnerabilities you’re hunting). You can use free resources like the [Odin Project](https://www.theodinproject.com) to get familiar with coding practices, and it certainly doesn’t hurt to know how something works when you’re trying to break it!
+Another worthwhile step, though not necessary, would be to learn some frontend or backend programming (depending on the vulnerabilities you’re hunting). You can use free resources like the [The Odin Project](https://www.theodinproject.com) to get familiar with coding practices, and it certainly doesn’t hurt to know how something works when you’re trying to break it!
 <p align="center">
   <img src="../assets/images/odin-project.png" alt="odin-project" title="The Odin Project" width="80%" />
 </p>
