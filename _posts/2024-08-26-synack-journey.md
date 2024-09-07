@@ -4,7 +4,7 @@ title:  "My Journey to Synack"
 author: chandler
 categories: [ pentests, bug bounty]
 image: assets/images/3.jpg
-featured: true
+featured: false
 ---
 
 
