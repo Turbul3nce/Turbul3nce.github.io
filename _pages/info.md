@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Chandler Rose
+title: Info Center
 permalink: /info
 comments: false
 ---
 
-<h2>Navigation</h2>
+<h3>Navigation</h3>
 <div>
   <table style="width:100%;">
     <tr>
@@ -31,7 +31,7 @@ comments: false
 
 ---
 
-## References
+### References
 
 [OWASP Top 10](https://owasp.org/www-project-top-ten/)
 <br>
