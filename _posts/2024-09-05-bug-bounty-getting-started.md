@@ -7,7 +7,7 @@ image: assets/images/nervous-hacker.png
 featured: true
 ---
 
-## Echo "Hello $Hacker" | ./initiate_bugbounty 
+### Echo "Hello $Hacker" | ./initiate_bugbounty 
 
 Hello to the two or three people out there who read these posts. I'm pretty sure I write these more for myself than anyone else. It's a great way to track my progress, and I get some creative writing in—win-win ;) Anyway, let's get down to business. I wanted to take some time to write a short post for aspiring bug bounty hunters out there. 
 
@@ -19,7 +19,7 @@ After finishing the course, I started my bug bounty journey on HackerOne. Two we
 </p>
 <br>
 
-## What to Know?
+### What to Know?
 
 Let’s pretend you’re not a total newbie. Maybe you’ve got a few hacker certifications under your belt, or perhaps you're already in the field with some experience, but you’re just not sure where to start with bug bounty hunting. It’s important to understand some key differences with bug bounty hunting:
 
@@ -34,7 +34,7 @@ Let’s pretend you’re not a total newbie. Maybe you’ve got a few hacker cer
 5. Bug bounty hunting is like an Easter egg hunt! Not all targets are vulnerable, and you may spend an ungodly amount of time on one target only to find absolutely nothing. And that’s okay, because your next target may have a bug around every corner, making it all worth it.
 <br>
 
-## Where to Start?
+### Where to Start?
 
 There are plenty of solid public programs to start hacking on. [HackerOne](https://www.hackerone.com/), [BugCrowd](https://www.bugcrowd.com/), [Integriti](https://www.intigriti.com/), etc. There are also private programs you can apply for, like [Synack](https://www.synack.com/).With these in mind, choose a program, sign up, and move on to the next step: selecting a target! Arguably, one of the most important parts of starting in bug bounty is choosing your target. As a beginner, you’ll want to select a target appropriate for your experience level. Starting with a target offering rewards from $10k to $200k likely won’t be a very fruitful hacking experience for you.
 
