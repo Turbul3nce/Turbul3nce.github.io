@@ -4,10 +4,6 @@ title: Info Center
 permalink: /info
 comments: false
 ---
-<p align="center">
-<h6>Navigation</h6>
-</p>
----
 <div>
   <table style="width:100%;">
     <tr>
