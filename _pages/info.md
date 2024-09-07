@@ -12,7 +12,7 @@ comments: false
       <!-- Navigation menu on the left -->
       <td>
         <ul>
-          <li><a href="#information-gathering">Recon Methodology</a></li>
+          <li><a href=/notes/recon>Recon Methodology</a></li>
           <li><a href="#application-checklist">Application Checklist</a></li>
           <li>
             <a href="#vulnerability-testing">Vulnerability Testing</a>
@@ -25,13 +25,13 @@ comments: false
               <li><a href="#csrf">Cross-Site Request Forgery (CSRF)</a></li>
             </ul>
           </li>
-          <li><a href="#references">References</a></li>
+          <li><a href="#references"></a>Bug Bounty Programs</li>
         </ul>
       </td>
 <!-- Image on the right -->
       <td>
         <p align="center">
-          <img src="../assets/images/Hunting-for-Bugs.png" alt="bug-hunting" title="Bug Hunting" width="80%" />
+          <img src="../assets/images/Hunting-for-Bugs.png" alt="bug-hunting" title="Bug Hunting" width="92%" />
         </p>
       </td>
     </tr>
