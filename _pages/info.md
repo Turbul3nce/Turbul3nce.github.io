@@ -31,7 +31,7 @@ comments: false
 <!-- Image on the right -->
       <td>
         <p align="center">
-          <img src="../assets/images/Hunting-for-Bugs.png" alt="bug-hunting" title="Bug Hunting" width="100%" />
+          <img src="../assets/images/Hunting-for-Bugs.png" alt="bug-hunting" title="Bug Hunting" width="75%" />
         </p>
       </td>
     </tr>
