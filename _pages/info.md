@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Info Center
+title: Information Center
 permalink: /info
 comments: false
 ---
