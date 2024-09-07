@@ -5,7 +5,7 @@ permalink: /info
 comments: false
 ---
 
-<h4>Navigation</h4>
+<h6>Navigation</h6>
 <div>
   <table style="width:100%;">
     <tr>
