@@ -1,9 +1,8 @@
 ---
-layout: post
-title:  Info
-author: chandler
-image: assets/images/bug-guide.png
+layout: page
+title: Chandler Rose
 permalink: /info
+comments: true
 ---
 
 <h2>Navigation</h2>
@@ -11,7 +10,7 @@ permalink: /info
   <table style="width:100%;">
     <tr>
       <!-- Navigation menu on the left -->
-      <td style="width:65%;">
+      <td style="width:60%;">
         <ul>
           <li><a href="/notes/recon-methodology">Recon Methodology</a></li>
           <li><a href="/notes/app-checklist">Application Checklist</a></li>
@@ -20,6 +19,11 @@ permalink: /info
           <li><a href="/notes/program-links">Bug Bounty Programs</a></li>
         </ul>
       </td>
+      <!-- Image on the right -->
+      <td style="width:40%;">
+        <p align="right">
+          <img src="../assets/images/bug-guide.png" alt="bug-hunting" title="Bug Hunting" width="80%" />
+        </p>
       </td>
     </tr>
   </table>
