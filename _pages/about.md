@@ -8,19 +8,19 @@ comments: true
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-From Army boots to cybersecurity roots, Chandler has spent the last two years diving headfirst into the world of security. Starting with CTFs and rapidly expanding his expertise, he balances his life as a red team operator, security engineer, and researcher with being a student and a dedicated father. 
-  
-A cybersecurity "professional" and student with expertise in red teaming and penetration testing. Chandler has a strong focus on application security and research, he has spent the past few years honing his skills, transitioning from CTF challenges to real-world bug bounty hunting.
-
-With multiple certifications, including the OSCP and OSEP, Chandler continuously strives to enhance his skill set in the ever-evolving field of cybersecurity. In addition to his professional achievements, he is currently pursuing a Bachelor's degree in Cybersecurity and Information Assurance from Western Governors University. This combination of certifications and formal education reflects Chandler’s commitment to staying ahead of the curve and expanding his expertise.
-
-He also just loves `hacking`!
-
+<p>From Army boots to cybersecurity roots, Chandler has spent the last two years diving headfirst into the world of security. Starting with CTFs and rapidly expanding his expertise, he balances his life as a red team operator, security engineer, and researcher with being a student and a dedicated father.</p> 
+<br>  
+<p>A cybersecurity "professional" and student with expertise in red teaming and penetration testing. Chandler has a strong focus on application security and research, he has spent the past few years honing his skills, transitioning from CTF challenges to real-world bug bounty hunting.</p>
+<br>
+<p>With multiple certifications, including the OSCP and OSEP, Chandler continuously strives to enhance his skill set in the ever-evolving field of cybersecurity. In addition to his professional achievements, he is currently pursuing a Bachelor's degree in Cybersecurity and Information Assurance from Western Governors University. This combination of certifications and formal education reflects Chandler’s commitment to staying ahead of the curve and expanding his expertise.</p>
+<br>
+He also just loves <br>hacking</b>!
+<br>
 <a href="https://www.linkedin.com/in/chandler-rose">LinkedIn Profile</a>
 <br>
 <a href="https://hackerone.com/turbul3nce?type=user">HackerOne</a>
 <br>
-<a href="https://www.youtube.com/@rosehacksyoutube">YouTube</a> <----<b>`Dont judge`</b>
+<a href="https://www.youtube.com/@rosehacksyoutube">YouTube</a> <----<b>Not active.. For now.</b>
 </div>
 
 <div class="col-md-4">
