@@ -15,7 +15,6 @@ comments: true
 <p>With multiple certifications, including the OSCP and OSEP, Chandler continuously strives to enhance his skill set in the ever-evolving field of cybersecurity. In addition to his professional achievements, he is currently pursuing a Bachelor's degree in Cybersecurity and Information Assurance from Western Governors University. This combination of certifications and formal education reflects Chandler’s commitment to staying ahead of the curve and expanding his expertise.</p>
 
 <p>He also just loves <b>hacking</b>!</p>
-<br>
 <a href="https://www.linkedin.com/in/chandler-rose">LinkedIn Profile</a>
 <br>
 <a href="https://hackerone.com/turbul3nce?type=user">HackerOne</a>
