@@ -12,7 +12,7 @@ comments: false
       <!-- Navigation menu on the left -->
       <td>
         <ul>
-          <li><a href="/notes/recon">Recon Methodology</a></li>
+          <li><a href="/notes/recon/methodology">Recon Methodology</a></li>
           <li><a href="#application-checklist">Application Checklist</a></li>
           <li>
             <a href="#vulnerability-testing">Vulnerability Testing</a>
