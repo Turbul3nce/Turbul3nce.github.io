@@ -1,3 +1,10 @@
+---
+layout: page
+title: Chandler Rose
+permalink: /about
+comments: true
+---
+
 ## Recon
 
 #### Objectives:
