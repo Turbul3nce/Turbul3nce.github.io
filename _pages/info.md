@@ -5,7 +5,7 @@ permalink: /info
 comments: false
 ---
 
-<h3>Navigation</h3>
+<h4>Navigation</h4>
 <div>
   <table style="width:100%;">
     <tr>
@@ -31,7 +31,7 @@ comments: false
 
 ---
 
-### References
+#### References
 
 [OWASP Top 10](https://owasp.org/www-project-top-ten/)
 <br>
