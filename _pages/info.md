@@ -21,10 +21,10 @@ comments: true
       </td>
       <!-- Image on the right -->
       <td style="width:40%;">
-        <p align="right">
-          <img src="../assets/images/bug-guide.png" alt="bug-hunting" title="Bug Hunting" width="80%" />
-        </p>
-      </td>
+  <p align="right">
+    <img src="../assets/images/bug-guide.png" alt="bug-hunting" title="Bug Hunting" width="500px" />
+  </p>
+</td>
     </tr>
   </table>
 </div>
