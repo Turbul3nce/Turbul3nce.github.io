@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bug Bounty Guide
-permalink: /recon-methodology
+permalink: /info
 comments: false
 ---
 
