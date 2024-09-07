@@ -1,6 +1,9 @@
-
-
-#### References
+---
+layout: page
+title: References
+permalink: /notes/references
+comments: false
+---
 
 [OWASP Top 10](https://owasp.org/www-project-top-ten/)
 <br>
