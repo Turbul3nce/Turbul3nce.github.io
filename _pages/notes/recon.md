@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Chandler Rose
-permalink: /about
+permalink: /recon-methodology
 comments: true
 ---
 
