@@ -7,10 +7,10 @@ comments: false
 
 <h2>Navigation</h2>
 <div>
-  <table>
+  <table style="width:150%;">
     <tr>
       <!-- Navigation menu on the left -->
-      <td>
+      <td style="width:100%;">
         <ul>
           <li><a href="/notes/recon-methodology">Recon Methodology</a></li>
           <li><a href="/notes/app-checklist">Application Checklist</a></li>
@@ -19,32 +19,15 @@ comments: false
           <li><a href="/notes/program-links">Bug Bounty Programs</a></li>
         </ul>
       </td>
-<!-- Image on the right -->
-      <td>
+      <!-- Image on the right -->
+      <td style="width:50%;">
         <p align="center">
-          <img src="../assets/images/bug-guide.png" alt="bug-hunting" title="Bug Hunting" width="20%" />
+          <img src="../assets/images/bug-guide.png" alt="bug-hunting" title="Bug Hunting" width="50%" />
         </p>
       </td>
     </tr>
   </table>
 </div>
-
-<script>
-  // Get all elements with class 'dropdown-btn'
-  var dropdownBtns = document.querySelectorAll('.dropdown-btn');
-  
-  dropdownBtns.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      // Toggle the dropdown content visibility
-      var dropdownContent = this.nextElementSibling;
-      if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
-        dropdownContent.style.display = "block";
-      } else {
-        dropdownContent.style.display = "none";
-      }
-    });
-  });
-</script>
 
 ---
 
