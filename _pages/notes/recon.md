@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Chandler Rose
+title: Recon Methodology
 permalink: /notes/recon-methodology
-comments: true
+comments: false
 ---
 
 ## Recon
