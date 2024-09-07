@@ -2,7 +2,7 @@
 layout: page
 title: Chandler Rose
 permalink: /info
-comments: true
+comments: false
 ---
 
 <h2>Navigation</h2>
@@ -12,17 +12,17 @@ comments: true
       <!-- Navigation menu on the left -->
       <td style="width:60%;">
         <ul>
+          <li><a href="/notes/program-links">Bug Bounty Programs</a></li>
           <li><a href="/notes/recon-methodology">Recon Methodology</a></li>
           <li><a href="/notes/app-checklist">Application Checklist</a></li>
-          <li><a href="/notes/auto-scripts">Automation Scripts</a></li>
           <li><a href="/notes/vuln-testing">Vulnerability Testing</a></li>
-          <li><a href="/notes/program-links">Bug Bounty Programs</a></li>
+          <li><a href="/notes/auto-scripts">Automation Scripts</a></li>
         </ul>
       </td>
       <!-- Image on the right -->
       <td style="width:40%;">
-  <p align="right">
-    <img src="../assets/images/bug-guide.png" alt="bug-hunting" title="Bug Hunting" width="500px" />
+  <p align="center">
+    <img src="../assets/images/bug-guide.png" alt="bug-hunting" title="Bug Hunting" width="600px" />
   </p>
 </td>
     </tr>
