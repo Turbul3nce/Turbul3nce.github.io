@@ -2,7 +2,7 @@
 layout: page
 title: Chandler Rose
 permalink: /about
-comments: true
+comments: false
 ---
 
 <div class="row justify-content-between">
