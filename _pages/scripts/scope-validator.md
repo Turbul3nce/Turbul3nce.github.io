@@ -6,7 +6,8 @@ comments: false
 ---
 
 <h7>A little python script to checks an IP address against a file of IP addresses and ranges to ensure the target you are testing is within scope.</h7>
-```
+
+```python
 #!/usr/bin/env python3
 
 import ipaddress
@@ -48,3 +49,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
