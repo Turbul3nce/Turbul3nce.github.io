@@ -9,7 +9,7 @@ featured: true
 
 ### Echo "Hello $Hacker" | ./initiate_bugbounty 
 
-Hello to the two or three people out there who read these posts. I'm pretty sure I write these more for myself than anyone else. It's a great way to track my progress, and I get some creative writing in—win-win ;) Anyway, let's get down to business. I wanted to take some time to write a short post for aspiring bug bounty hunters out there. 
+Hello to the two or three people out there who read these posts. I'm pretty sure I write these more for myself than anyone else. It's a great way to track my progress, and I get some creative writing in—win-win ;) Anyway, let's get down to business. 
 
 As someone who recently got into bug hunting, and with the field growing so rapidly, maybe this will help a few newcomers. My credentials, you ask? What got me into bug bounty hunting in the first place was completing the [Bug Bounty Path](https://academy.hackthebox.com/preview/certifications/htb-certified-bug-bounty-hunter) from Hack The Box. By the way, great course! I fully recommend it for any aspiring pentesters and bug bounty hunters. 
 
