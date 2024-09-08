@@ -67,4 +67,4 @@ Another worthwhile step, though not necessary, would be to learn some frontend o
   <img src="../assets/images/odin-project.png" alt="odin-project" title="The Odin Project" width="80%" />
 </p>
 
-And with that, I’ll leave you to it. Go out and hack all the things. Remember, you are representing yourself and your future in the security community. Act ethically and <b>always</b> <b>always</b> stay in scope. Feel free to check out more of my blogs on topics like OSINT, the importance of fuzzing to expand your attack surface, and how I got into Synack! Hack the planet!
+And with that, I’ll leave you to it. Go out and hack all the things. Remember, you are representing yourself and your future in the security community. Act ethically and <b>always</b> <b>always</b> stay in scope. Feel free to check out more of my blogs on topics like OSINT, the importance of fuzzing to expand your attack surface, and how I got into Synack!
