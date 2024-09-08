@@ -1,6 +1,12 @@
+---
+layout: page
+title: Scope Validator
+permalink: /scripts/scope-validator
+comments: false
+---
 
-
-
+<h7>A little python script to checks an IP address against a file of IP addresses and ranges to ensure the target you are testing is within scope.</h7>
+```
 #!/usr/bin/env python3
 
 import ipaddress
