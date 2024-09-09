@@ -31,7 +31,6 @@ Let’s pretend you’re not a total newbie. Maybe you’ve got some hacker cert
 4. Keep an open mindset and build upon a solid methodology as you hunt.
 
 5. Bug bounty hunting is like an Easter egg hunt! You may spend a lot of time on a target and find nothing—that’s okay. Your next target may be full of bugs, making it all worth it.
-<br>
 
 ### Where to Start?
 
