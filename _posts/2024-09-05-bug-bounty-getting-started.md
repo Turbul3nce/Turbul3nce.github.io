@@ -52,9 +52,9 @@ A great starting point is the Department of Defense’s bug bounty program on Ha
 Now that you’ve found a suitable target, let's dive into the good stuff!
 <br> 
 
-## The Fun Part
+### The Fun Part
 
-In this section, I want to discuss hunting methodology. I won’t get too technical—there are plenty of resources for that (including this website). What’s key here is quickly understanding recon and initially focusing on one or two specific vulnerabilities. <b>During recon, your goal should be to gather as much information as possible on the assets in scope, such as subdomains and open ports.</b>
+Lastly, I want to discuss hunting methodology. I won’t get too technical—there are plenty of resources for that (including this website). What’s key here is quickly understanding recon and initially focusing on one or two specific vulnerabilities. <b>During recon, your goal should be to gather as much information as possible on the assets in scope, such as subdomains and open ports.</b>
 
 By narrowing your focus on a couple of vulnerabilities, you’ll streamline your testing and increase your chances of finding something meaningful early on.
 
