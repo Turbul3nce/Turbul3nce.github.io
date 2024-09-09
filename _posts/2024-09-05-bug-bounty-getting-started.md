@@ -40,7 +40,7 @@ This is where I’d suggest starting with a Vulnerability Disclosure Program (VD
 
 VDP programs typically have fewer participants, increasing your chances of finding bugs. They’ll help you get comfortable hunting and sticking to a scope.
 
-When selecting your target, the final factor to consider is the scope. This is something you’ll want to approach carefully. Ideally, choose a target with a wide attack surface. What does that look like? Well, generally, it means a target with plenty of wildcards.
+When selecting your target, the final factor to consider is the scope, and it’s something you’ll want to approach carefully. Ideally, choose a target with a wide attack surface. What does that look like? Generally, I look for wildcards—the more, the better! This means all subdomains of the root domain are in scope, allowing your recon skills to shine. If you’re able to find hidden subdomains that haven’t been tested by other hackers, it increases your chances of finding bugs.
 <p align="center">
   <img src="../assets/images/bug_bounty_scope.png" alt="Burp-Intruder" title="Burp Intruder Settings" width="80%" />
 </p>
