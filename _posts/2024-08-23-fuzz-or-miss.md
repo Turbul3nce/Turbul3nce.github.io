@@ -8,9 +8,9 @@ featured: false
 ---
 
 ### Background 
-Earlier this year, my team and I were testing a publicly accessible web application. Although I won't specify the site or CMS, the experience highlighted a vital aspect of security testing.
+Earlier this year, my team and I were testing a web application. Although I won't specify the site or CMS, the experience highlighted a vital aspect of pentesting and bug bounty hunting.
 
-Over the two weeks, we meticulously followed the OWASP testing guide, extensively enumerating every feature of the application. Despite our thorough efforts, we initially found no vulnerabilities. It wasn't until the end of our assignment that I decided to delve deeper by fuzzing directories several levels deep, driven by a determination to find anything that might have been overlooked.
+Over the course of two weeks, we meticulously followed the OWASP testing guide, extensively enumerating every feature of the application. Despite our thorough efforts, we initially found no vulnerabilities. It wasn't until the end of our assignment that I decided to delve deeper by fuzzing directories several levels deep, driven by a determination to find anything that might have been overlooked.
 
 ### Let There be Fuzz
 There are several tools we can use for fuzzing in scenarios like this, but I prefer to stay inside Burpsuite for most of my testing needs. We can simply send our request to Intruder and highlight what we want to fuzz. It's worth mentioning that you need Burpsuite Pro to avoid rate limiting. Once in Intruder, typically, I select the parameters I want to fuzz, highlight them, and click "Add." Then, I choose my wordlist, depending on what I am targeting. SecList usually has what I need. It's important to try several different wordlists when fuzzing. One that I have found particularly useful for APIs and even some directories is the api-res wordlist under SecLists>Discovery>Web-Content>api>api-endpoints-res.txt. 
