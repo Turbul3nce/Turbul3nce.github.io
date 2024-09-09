@@ -7,7 +7,7 @@ image: assets/images/nervous-hacker.png
 featured: true
 ---
 
-### Echo "Hello $Hacker" | ./initiate_bugbounty 
+### Echo $Hacker | ./initiate_bugbounty 
 
 Hello to the two or three people out there who read these posts. I’m pretty sure I write these more for myself than anyone else. It’s a great way to track my progress and get some writing in—win-win! Anyway, let’s get down to business. 
 
