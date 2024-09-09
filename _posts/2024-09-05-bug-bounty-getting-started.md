@@ -45,7 +45,7 @@ When selecting your target, the final factor to consider is the scope, and it’
   <img src="../assets/images/bug_bounty_scope.png" alt="Burp-Intruder" title="Burp Intruder Settings" width="80%" />
 </p>
 
-Furthermore, you’ll want to review the details of a target to see which vulnerabilities are in scope. If the target has a long list of disallowed vulnerabilities, it might not be beginner-friendly. Another key factor is how many bugs have been submitted recently—you’ll have better luck with a target that’s had 500 bugs in the last 90 days versus just 10.
+Furthermore, you’ll want to review the details of a target to see which vulnerabilities are in scope. If the target has a long list of disallowed vulnerabilities, it might not be beginner-friendly. Another key factor is how many bugs have been submitted recently—you’ll have better luck with a target that’s had 500 bugs in the last 90 days versus one with just 10.
 
 A great starting point is the Department of Defense’s bug bounty program on HackerOne. Their scope is huge—pretty much any .mil domain is fair game—and they accept a wide range of bugs. Just to show how beginner-friendly it is: in the last 90 days, over 1,700 bugs were submitted. Crazy, right? But a fantastic opportunity for newcomers nonetheless.
 
