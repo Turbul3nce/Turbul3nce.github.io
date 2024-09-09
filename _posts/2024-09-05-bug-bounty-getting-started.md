@@ -17,7 +17,6 @@ After finishing the course, I started my bug bounty journey on HackerOne. Two we
 <p align="center">
   <img src="https://i.imgflip.com/92oh7v.jpg" alt="Confused" title="Where's The Bounty" width="80%" />
 </p>
-<br>
 
 ### What to Know?
 
