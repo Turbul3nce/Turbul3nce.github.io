@@ -13,23 +13,33 @@ Earlier this year, I was on a pentest contract for a small bank, which will rema
 After initiating a network scan with Nessus, I proceeded with the standard toolkit for a local penetration test—running `nmap`, leveraging `responder`, packet sniffing with `wireshark`, examining printers/MFPs, and scanning services with `CrackMapExec`. Despite these efforts, no significant vulnerabilities emerged. The printers showed some weaknesses, but nothing that could facilitate privilege escalation. This was unsurprising, as the bank had several pentests in the past.
 
 ### OSINT FTW
-After several days of getting nowhere and nearing the end of the assessment, I decided it was time to target some services and spray passwords. To facilitate this attack, I needed usernames. This is when I turned to Open Source Intelligence (OSINT). From the bank's website and employees’ LinkedIn profiles, I compiled a list of potential usernames. Additionally, I discovered that the bank had an app on the App Store. The bank's mobile application had only four reviews, all excessively positive, likely from employees given the timing of the posts. Thus, I added these names to my usernames file. The significance of obtaining usernames from the App Store reviews will become evident later on.
+After several days of getting nowhere and nearing the end of the assessment, I decided it was time to target some services and spray passwords. To facilitate this attack, I needed usernames. This is when I turned to Open Source Intelligence (OSINT). From the bank's website and employees’ LinkedIn profiles, I compiled a list of potential usernames. Additionally, I discovered that the bank had an app on the App Store. The bank's mobile application had only <b>three</b> reviews, all excessively positive, likely from employees given the timing of the posts. Thus, I added these names to my usernames file. The significance of obtaining usernames from the App Store reviews will become evident later on.
 
 
 ### Spray and Pray
 With these usernames, I attempted to password spray using common business credentials:
 
+```code
+SEASONYEAR!
+SEASONYEAR!@
+BUSINESSNAMEYEAR1!
+EMPLOYEENAMEBIRTHYEAR!
+```
+The Command:
+
 ```bash
 crackmapexec smb 192.168.1.0/24 -u users.txt -p passwordlist.txt --continue-on-success
 ```
 
-However, I didn’t get anywhere with SMB. So, I moved onto spraying against WinRM, but still nothing—I think this was likely due to some issues with crackmapexec not working at the time with winrm. So, I switched to using winrm-brute for password spraying.
+However, I didn’t get anywhere with SMB. So, I moved onto spraying WinRM credentials, but still nothing—I think this was likely due to some issues with crackmapexec not working at the time with winrm. So, I switched to using winrm-brute for password spraying.
+
+The Command:
 
 ```bash
 winrm-brute --hosts 192.168.1.0/24 --usernames users.txt --passwords common_passwords.txt
 ```
 
-After some time, I checked back on winrm-brute to see if there were any hits. And wouldn’t you know it, there was a single hit! The valid username was one of the four users from the mobile app reviews. Their password was in the format of SeasonYEAR!, which seems like a common format in companies where users are required to change their password quarterly or semiannually. Just like that, I was in! But this person wasn’t just any domain user; they were a Domain Admin with a surprisingly weak password.
+After some time, I checked back on winrm-brute to see if there were any hits. And wouldn’t you know it, there was a single hit! The valid username was one of the three users from the app store reviews for the bank's mobile application. My hunch was right. They were employees! And this specific employee's password was in the format of SeasonYEAR!, which seems like a pretty common format in companies where users are required to change their password quarterly or semiannually. What made this even funnier was during the debrief, they said their IT department told them to use this password. Just like that, I was in! But this person wasn’t just any domain user; they were a Domain Admin with a surprisingly weak password.
 <p align="center">
   <img src="../assets/images/bad-password.jfif" alt="Do better!" title="Bad Passsword" width="80%" />
 </p>
