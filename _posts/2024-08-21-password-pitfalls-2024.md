@@ -39,7 +39,7 @@ The Command:
 winrm-brute --hosts 192.168.1.0/24 --usernames users.txt --passwords common_passwords.txt
 ```
 
-After some time, I checked back on winrm-brute, and there it was—a single hit! The valid username matched one of the three users from the app store reviews for the bank’s mobile application, confirming my hunch that they were employees. This particular employee’s password followed a common corporate pattern, ‘SeasonYEAR!’, which is often used in environments requiring quarterly or semiannual password changes. During the debrief, it was revealed that their IT department had recommended this format. As a result, I gained access—and not just to any domain user, but to a Domain Admin account, with a surprisingly weak password.
+After some time, I checked back on winrm-brute, and there it was—a single hit! The valid username matched one of the three users from the app store reviews for the bank’s mobile application, confirming my hunch that they were employees. This particular employee’s password followed a common corporate pattern, ‘SeasonYEAR!’, which is often used in environments requiring quarterly or semiannual password changes. During the debrief, it was revealed—ironically—that their IT department had recommended this format. As a result, I gained access, not just to any domain user, but to a Domain Admin account with a surprisingly weak password.
 
 <p align="center">
   <img src="../assets/images/bad-password.jfif" alt="Do better!" title="Bad Passsword" width="80%" />
