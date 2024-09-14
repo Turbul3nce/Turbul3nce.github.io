@@ -47,6 +47,5 @@ After some time, I checked back on winrm-brute, and there it was—a single hit!
 <p align="center">
   <img src="../assets/images/bad-password.jfif" alt="Do better!" title="Bad Passsword" width="80%" />
 </p>
-<br>
 
 This assessment reveals that passwords continue to offer easy entry points for attackers. Implementing stringent password policies and regular security training is vital. Additionally, thorough <b>OSINT</b> is critical for pentesters, as it widens the attack surface, making our target easier to breach. For us, this means a greater likelihood of identifying and exploiting these gaps before the real threat actors have a chance. 
