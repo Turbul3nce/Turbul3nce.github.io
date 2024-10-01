@@ -1,4 +1,9 @@
-
+---
+layout: page
+title: Information Center
+permalink: /notes/app-checklist
+comments: false
+---
 
 
 ## Application Checklist
