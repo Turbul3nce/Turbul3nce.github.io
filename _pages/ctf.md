@@ -2,7 +2,7 @@
 layout: page
 title: Capture the Flag
 permalink: /ctf
-comments: true
+comments: false
 ---
 <link rel="stylesheet" type="text/css" href="/assets/css/ctf-style.css">
 
