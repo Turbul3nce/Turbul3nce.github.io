@@ -1,10 +1,81 @@
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
+    <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+    </a>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ml-auto">
+
+                {% if page.url == "/" %}
+                <li class="nav-item active">
+                {% else %}
+                <li class="nav-item">
+                {% endif %}
+                <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/hub">Hub</a>
+                </li>
+
+		<li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/writeups">CTF</a>
+                </li>
+
+		<li class="nav-item">
+                <a class="nav-link" href="https://github.com/Turbul3nce">GitHub</a>
+                </li>
+		    
+		<li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+                </li>
+
+		
+
+                {% include search-lunr.html %}
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+
+<div class="site-content">
+
+<div class="container">
+
+<!-- Site Title
+================================================== -->
+<div class="mainheading">
+    <h1 class="sitetitle">{{ site.name }}</h1>
+    <p class="lead">
+        {{ site.description }}
+    </p>
+</div>
+
+<!-- Actual Site Content
+================================================== -->
 
 <link rel="stylesheet" type="text/css" href="/assets/css/info-center-style.css">
-
-<div class="header">
-  <h1>Information Center</h1></h1>
-  <p>Journey through CTF challenges with my write-ups.</p>
-</div>
 
 <div class="container">
     <!-- Sidebar Menu -->
