@@ -2,37 +2,139 @@
 layout: default
 ---
 
-<link rel="stylesheet" type="text/css" href="/assets/css/info-center-style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Center</title>
+    <style>
+        /* Global reset and styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body {
+            background-color: #1e1e1e;
+            color: #c9d1d9;
+            font-size: 16px;
+            line-height: 1.6;
+        }
 
-<div class="container">
-    <!-- Sidebar Menu -->
-    <div class="sidebar">
-        <h2>Navigation</h2>
-        <ul>
-            <li><a href="/notes/program-links">Bug Bounty Programs</a></li>
-            <li><a href="/notes/recon-methodology">Recon Methodology</a></li>
-            <li><a href="/notes/app-checklist">Application Checklist</a></li>
-            <li><a href="/notes/vuln-testing">Vulnerability Testing</a></li>
-            <li><a href="/notes/auto-scripts">Automation Scripts</a></li>
-            <li><a href="/notes/references">References</a></li>
-        </ul>
-    </div>
+        /* Layout */
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
 
-    <!-- Main Content Area -->
-    <div class="main-content">
-        <h1>Welcome to the Information Center</h1>
-        <p>Explore a curated set of resources and tools tailored for security researchers, bug bounty hunters, and developers alike. The sections below contain information on everything from reconnaissance methodology to automation scripts.</p>
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 25%;
+            background-color: #161b22;
+            padding: 20px;
+            border-right: 2px solid #282828;
+        }
 
-        <div class="terminal">
-            <p><strong>Latest Tips:</strong></p>
-            <code>
-                > Always sanitize inputs. <br>
-                > Leverage automation but stay hands-on.<br>
-                > Practice your recon skills daily.
-            </code>
+        .sidebar ul {
+            list-style-type: none;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #61dafb;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .sidebar ul li a:hover {
+            color: #fff;
+        }
+
+        /* Main Content */
+        .main-content {
+            width: 75%;
+            padding: 20px;
+        }
+
+        .main-content h1 {
+            font-size: 32px;
+            color: #61dafb;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        /* Hackerish Styling */
+        .terminal {
+            background-color: #0d1117;
+            border: 2px solid #282828;
+            padding: 20px;
+            border-radius: 10px;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .terminal code {
+            color: #00ff00;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #61dafb;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar Menu -->
+        <div class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="/notes/program-links">Bug Bounty Programs</a></li>
+                <li><a href="/notes/recon-methodology">Recon Methodology</a></li>
+                <li><a href="/notes/app-checklist">Application Checklist</a></li>
+                <li><a href="/notes/vuln-testing">Vulnerability Testing</a></li>
+                <li><a href="/notes/auto-scripts">Automation Scripts</a></li>
+                <li><a href="/notes/references">References</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <h1>Welcome to the Information Center</h1>
+            <p>Explore a curated set of resources and tools tailored for security researchers, bug bounty hunters, and developers alike. The sections below contain information on everything from reconnaissance methodology to automation scripts.</p>
+
+            <div class="terminal">
+                <p><strong>Latest Tips:</strong></p>
+                <code>
+                    > Always sanitize inputs. <br>
+                    > Leverage automation but stay hands-on.<br>
+                    > Practice your recon skills daily.
+                </code>
+            </div>
         </div>
     </div>
-</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Site - Stay curious, stay secure!</p>
+    </footer>
+
+</body>
+</html>
 
 <!-- Footer -->
 <footer>
