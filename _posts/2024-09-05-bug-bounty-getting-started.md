@@ -4,7 +4,7 @@ title:  "Bug Bounty: Getting Started"
 author: chandler
 categories: [ bug bounty,]
 image: assets/images/nervous-hacker.png
-featured: true
+featured: false
 ---
 
 ### Echo $Hacker | ./initiate_bugbounty 
