@@ -1,5 +1,5 @@
 ---
 layout: info-center
-permalink: /info-center
+permalink: /hub
 comments: false
 ---
