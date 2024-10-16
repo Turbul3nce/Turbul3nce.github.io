@@ -1,0 +1,62 @@
+/* General page styling */
+body {
+  background-color: #0f0f0f;
+  color: #00ff66;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+  color: #00ff66;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff0066;
+}
+
+/* Header and title section */
+.header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #00ff66;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: 0.1em;
+}
+
+/* CTF links section */
+.ctf-links {
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(0, 255, 102, 0.6);
+}
+
+.ctf-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ctf-links li {
+  margin: 15px 0;
+}
+
+.ctf-links li:hover {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Terminal-like footer */
+.footer {
+  font-size: 0.9em;
+  text-align: center;
+  padding: 20px;
+  color: #808080;
+  border-top: 2px solid #00ff66;
+}
