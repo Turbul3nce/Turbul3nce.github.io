@@ -1,5 +1,5 @@
 ---
 layout: ctfs
-permalink: /ctf
+permalink: /writeups
 comments: false
 ---
