@@ -1,5 +1,5 @@
 ---
-layout: info-center
+layout: hub
 permalink: /hub
 comments: false
 ---
