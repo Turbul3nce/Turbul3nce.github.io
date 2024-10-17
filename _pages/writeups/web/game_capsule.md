@@ -14,7 +14,7 @@ comments: false
 A popular game-selling app is secretly offering a blacklisted, highly coveted game hidden from public view. Your mission is to hack into the app’s backend, bypass its security, and uncover the hidden game to add it to your collection. Can you outsmart the system and get the forbidden game in your hands?
 ---
 ##### Challenge: 
-This was a fairly easy web challenge that required about 2 minutes of my time. The NodeJS application uses JWT to assign/define user roles. The JWT doesn't use a secret key and signing algorithm. So, I was able to forge a JWT for any user, in this case the "admin" user, which the application then uses to determine whether the flag is read from /flag.txt and rendered on the index.html page.
+This was a fairly easy web challenge that required about 2 minutes of my time. The NodeJS application uses JWT to assign/define user roles. It renders the page differently depending on the username inside the JWT. So, I was able to forge a JWT for any user, in this case the "admin" user, which the application uses to determine whether the flag should read from /flag.txt and rendered onto the index.html page.
 
 ##### Vulnerable Code:
 Inside the AuthMiddleWare file there are two functions, the setcookie and the getcookie function. The getcookie function checks if the incoming request has a cookie, if not the setcookie function generates one with a randomly generated username, such as "guest_ewiufhu4h98hf". It then signs the cookie. 
