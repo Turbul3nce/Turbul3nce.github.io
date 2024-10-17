@@ -5,7 +5,7 @@ permalink: /writeups/web/php
 comments: false
 ---
 <p align="center">
-  <img src="https://i.imgflip.com/9727sa.jpg" title="PHP" width="85%" />
+  <img src="https://i.imgflip.com/9727sa.jpg" title="PHP" width="100%" />
 </p>
 
 ##### Difficulty: <b>Easy</b> 
@@ -27,13 +27,13 @@ In the potato method, user-controlled input (id and ext parameters from the quer
 ##### Solution:
 Once we navigate to the application using our browser, we see three potatos. Each of them gets loaded using the ID parameter.
 <p align="center">
-  <img src="https://i.imgflip.com/972gx1.jpg" title="ID Parameter" width="90%" />
+  <img src="https://i.imgflip.com/972gx1.jpg" title="ID Parameter" width="85%" />
 </p>
 <br>
 
 At first, I couldn’t include any files beyond the default ones provided by the application. I suspected something in the way the id parameter was being handled, so I checked the source code. A quick look at the index controller revealed why I couldn't get other files to load. There was another hidden paramter "ext", which was set as 'php' by default. I realized that by manually adding the ext parameter to the URL, I could specify any file extension. Sure enough, after including the ext parameter, I was able to access other files, including the flag:
 <p align="center">
-  <img src="https://i.imgflip.com/972jfn.jpg" title="The Flag" width="85%" />
+  <img src="https://i.imgflip.com/972jfn.jpg" title="The Flag" width="95%" />
 </p>
 <br>
 <br>
