@@ -17,7 +17,7 @@ You've been tasked on a pentest engagement to understand the token generation pr
 This challenge wasn't too difficult. The name and description pretty much gave away the vulnerability. However, it did require reading the source code and scripting to generate the possible reset tokens needed to brute-force the password reset. I spent more time on this than I should have because I was confusing milliseconds with seconds—I know, I know.
 
 ##### Vulnerable Code:
-The seed for the token is generated using only two easily predictable values: the user's email and the current time (Date.now()). It then MD5 hashes the two values, creating the reset token.
+The seed for the token is generated using two easily predictable values: the user's email and the current timestamp (Date.now()). The token is then created by MD5 hashing the seed.
 ###### /helpers/ResetToken.js file:
 ```
 const seed = email + currentTime.toString();
