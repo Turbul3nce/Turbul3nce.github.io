@@ -25,7 +25,7 @@ const token = crypto.createHash('md5').update(seed).digest('hex');
 ```
 
 ##### Solution:
-The application's weakness was immediately apparent from both the challenge description and its name. Our goal was to exploit a flaw in the way password reset tokens are generated. Upon exploring the application, it became clear that the core functionality we need to focus on involves creating an account, logging in, and resetting passwords. To capture the flag, we would need to log in as the admin, but what's most interesting for our purposes are the "forgot password" and "reset password" functionalities.
+The application's weakness was immediately apparent from both the challenge description and its name. Our goal was to exploit a flaw in the way password reset tokens are generated. Upon exploring the application, it became clear that the core functionality we need to focus on involves generating reset tokens and abusing the password reset feature. We would need to somehow obtain the reset token for the admin user, and then reset their password. To capture the flag, we would then log in as the admin.
 <p align="center">
   <img src="https://i.imgflip.com/975zj5.jpg" title="Reset Password" width="85%" />
 </p>
