@@ -25,7 +25,7 @@ if re.search(r'[\'"]', decoded_content, re.IGNORECASE):
 ```
 
 ##### Solution 
-When navigating the application, we see that we can create notes and submit reports. The title and content parameters accept user input but only sanitize single and double quotes, making it trivial to get XSS payloads to execute. When we create a note, it is assigned a unique URL on the server. This is where the report feature becomes useful — we can submit these note URLs to the admin by providing the URL with the report. Looking at the source code, we notice that the flag is stored in the admin's cookie. Now, we just need to craft a payload that sends the cookie to our server. While fetch() didn't work, I switched to using an image request instead. This worked when I tested it with my own cookie.
+When navigating the application, we see that we can create notes and submit reports. The title and content parameters accept user input but only sanitize single and double quotes, making it trivial to get XSS payloads to execute. When we create a note, it is assigned a unique identifier. This is where the report feature becomes useful — we can submit these note URLs to the admin by providing the URL to the report. Looking at the source code, we notice that the flag is stored in the admin's cookie. Now, we just need to craft a payload that sends the cookie to our server. While fetch() didn't work, I switched to using an image request instead. This worked when I tested it with my own cookie.
 <br>
 
 ##### Payload:
