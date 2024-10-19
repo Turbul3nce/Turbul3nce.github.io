@@ -19,9 +19,37 @@ Another straightforward web challenge from the Fall Huddle. The application has 
 ##### Vulnerable Code:
 In the potato method, user-controlled input (id and ext parameters from the query string) are directly used to construct the file path for inclusion. Since no validation or sanitization is applied, we can manipulate these parameters (e.g., with ../../../etc/passwd as the id and txt and the ext) to include arbitrary files on the server.
 ###### IndexController.php file:
-<p align="center">
-  <img src="https://i.imgflip.com/972d30.jpg" title="PHP Controller" width="60%" />
-</p>
+```php
+<?php
+
+class IndexController
+{
+    public function index($router)
+    {
+        $directory = __DIR__."/../views/potatoes";
+        $filesAndDirs = scandir($directory);
+        $filenames = [];
+
+        foreach ($filesAndDirs as $file) {
+            $fileInfo = pathinfo($file);
+
+            if (!is_dir($directory."/".$file)) {
+                $filenames[] = $fileInfo["filename"];
+            }
+        }
+
+        $router->view("index", ["filenames" => $filenames]);
+    }
+
+    public function potato($router)
+    {
+        $id = isset($_GET["id"]) ? $_GET["id"] : "1";
+        $ext = isset($_GET["ext"]) ? $_GET["ext"] : "php";
+        include __DIR__."/../views/potatoes/".$id.".".$ext;
+        exit;
+    }
+}
+```
 <br>
 
 ##### Solution:
