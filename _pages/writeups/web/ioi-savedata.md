@@ -5,7 +5,7 @@ permalink: /writeups/web/ioi-savedata
 comments: false
 ---
 <p align="center">
-  <img src="https://i.imgflip.com/977lta.jpg" title="IOI SaveData" width="100%" />
+  <img src="https://i.imgflip.com/977lta.jpg" title="IOI SaveData" width="90%" />
 </p>
 
 ##### Difficulty: <b>Hard</b> 
