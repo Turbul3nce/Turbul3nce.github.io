@@ -67,7 +67,7 @@ At first, I couldn’t include any files beyond the default ones provided by the
 <br>
 
 ##### RCE via Log Poisoning:
-After grabbing the flag, I decided to take it a step further and try to get a shell, as I always prefer that route when possible. Since there was an LFI vulnerability, I realized that log poisoning would be a simple way to escalate this to remote code execution. I verified I could include the nginx access.log file. I then captured a request to the server, modified the User-Agent header to contain a PHP reverse shell, and forwarded the request.
+After grabbing the flag, I decided to take it a step further and try to get a shell. Since there was an LFI vulnerability, I realized that log poisoning would be a simple way to escalate this to remote code execution. I verified I could include the nginx access.log file. I then captured a request to the server, modified the User-Agent header to contain a PHP reverse shell, and forwarded the request.
 <p align="center">
   <img src="https://i.imgflip.com/972ips.jpg" title="Burp Request" width="85%" />
 </p>
