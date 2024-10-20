@@ -5,7 +5,7 @@ permalink: /writeups/web/dinvoice
 comments: false
 ---
 <p align="center">
-  <img src="https://i.imgflip.com/972xdb.jpg" title="Bibliophile" width="100%" />
+  <img src="https://i.imgflip.com/97aktr.jpg" title="Bibliophile" width="100%" />
 </p>
 
 ##### Difficulty: <b>Medium</b> 
@@ -83,7 +83,7 @@ print("MD5 wordlist generated successfully and saved as 'md5_wordlist.txt'.")
 ```
 <br>
 
-##### Part 2: Generate a list of possible JWTs for the admin using the list of MD5 hashes.
+##### Part 2: Generated a list of possible JWTs for the admin using the list of MD5 hashes.
 ```python3
 $Python3 generateJWTs.py md5_wordlist.txt
 
