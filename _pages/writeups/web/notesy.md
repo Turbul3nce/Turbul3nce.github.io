@@ -14,7 +14,7 @@ comments: false
 You’ve been hired by a tech company to review their new note-taking app, "Notesy." The app allows users to create and manage notes with a focus on security. Your role is to assess the application for any potential vulnerabilities to ensure user data is well protected.
 
 ##### Challenge: 
-These web challenges from the Fall Huddle were easier than usual, especially this one. I wouldn’t call it hard at all. It’s a simple stored XSS vulnerability that we exploit to steal the admin's cookie, which contains the flag. Payloads with single or double quotes are blocked, but we can bypass this by HTML encoding the quotes. Another minor issue we encountered was with using fetch(), but we worked around it by using an image request instead.
+I disagree with the difficulty on most of these challenges. This one was particulary easy. It’s a basic stored XSS vulnerability that we exploit to steal the admin's cookie, which contains the flag. Payloads with single or double quotes are blocked, but we can bypass this by HTML encoding the quotes. Another minor issue we encountered was with using fetch(), but we worked around it by using an image request instead.
 
 ##### Vulnerable Code:
 ###### /app.py file:
@@ -25,7 +25,7 @@ if re.search(r'[\'"]', decoded_content, re.IGNORECASE):
 ```
 
 ##### Solution 
-When navigating the application, we see that we can create notes and submit reports. The title and content parameters accept user input but only sanitize single and double quotes, making it trivial to get XSS payloads to execute. When we create a note, it is assigned a unique identifier. This is where the report feature becomes useful — we can submit these note URLs to the admin by providing the URL to the report. Looking at the source code, we notice that the flag is stored in the admin's cookie. Now, we just need to craft a payload that sends the cookie to our server. While fetch() didn't work, I switched to using an image request instead. This worked when I tested it with my own cookie.
+When navigating the application, we see that we can create notes and submit reports. The title and content parameters accept user input but only sanitize single and double quotes, making it trivial to get XSS payloads to execute. When we create a note, it is assigned a unique identifier. This is where the report feature becomes useful — we can submit these note URLs to the admin (bot) for "review". Looking at the source code, we notice that the flag is stored in the admin's cookie. Now, we just need to craft a payload that sends the cookie to our server. While fetch() didn't work, I switched to using an image request instead. This worked when I tested it with my own cookie.
 <br>
 
 ##### Payload:
