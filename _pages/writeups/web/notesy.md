@@ -14,7 +14,7 @@ comments: false
 You’ve been hired by a tech company to review their new note-taking app, "Notesy." The app allows users to create and manage notes with a focus on security. Your role is to assess the application for any potential vulnerabilities to ensure user data is well protected.
 
 ##### Challenge: 
-I disagree with the difficulty on most of these challenges. This one was particulary easy. It’s a basic stored XSS vulnerability that we exploit to steal the admin's cookie, which contains the flag. Payloads with single or double quotes are blocked, but we can bypass this by HTML encoding the quotes. Another minor issue we encountered was with using fetch(), but we worked around it by using an image request instead.
+This one was particulary easy. It’s a basic stored XSS vulnerability that we exploit to steal the admin's cookie, which contains the flag. Payloads with single or double quotes are blocked, but we can bypass this by HTML encoding the quotes. Another minor issue we encountered was with using fetch(), but we worked around it by using an image request instead.
 
 ##### Vulnerable Code:
 ###### /app.py file:
