@@ -14,7 +14,7 @@ comments: false
 You've been tasked on a pentest engagement to understand the token generation process and exploit it, do you have what it takes?
 
 ##### Challenge: 
-This challenge wasn't too difficult. The name and description pretty much gave away the vulnerability. However, it did require reading the source code and scripting to generate the possible reset tokens needed to brute-force the password reset. I spent more time on this than I should have because I was confusing milliseconds with seconds—I know, I know.
+The name and description pretty much gave away the vulnerability. However, it did require reading the source code and scripting to generate the possible reset tokens needed to brute-force the password reset. I spent more time on this than I should have because I was confusing milliseconds with seconds 1o1.
 
 ##### Vulnerable Code:
 The seed for the token is generated using two easily predictable values: the user's email and the current timestamp (Date.now()). The token is then created by MD5 hashing the seed.
@@ -25,7 +25,7 @@ const token = crypto.createHash('md5').update(seed).digest('hex');
 ```
 
 ##### Solution:
-The application's weakness was immediately apparent from both the challenge description and its name. Our goal was to exploit a flaw in the way password reset tokens are generated. Upon exploring the application, it became clear that the core functionality we need to focus on involves generating reset tokens and abusing the password reset feature. We would need to somehow obtain the reset token for the admin user, and then reset their password. To capture the flag, we would then log in as the admin.
+From the description, it was gathered that our goal was to exploit a flaw in the way password reset tokens are generated. Upon exploring the application, it became clear that the core functionality we need to focus on involves generating reset tokens and abusing the password reset feature. We would need to somehow obtain the reset token for the admin user, and then reset their password. To capture the flag, we would then log in as the admin.
 <p align="center">
   <img src="https://i.imgflip.com/975zj5.jpg" title="Reset Password" width="85%" />
 </p>
