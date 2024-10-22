@@ -5,7 +5,7 @@ permalink: /writeups/reversing/graverobber
 comments: false
 ---
 <p align="center">
-  <img src="https://i.imgflip.com/97ajfg.jpg" title="Graverobber" width="90%" />
+  <img src="/assets/images/graverobber.png" title="Graverobber" width="94%" />
 </p>
 
 ##### Difficulty: <b>Very Easy</b> 
