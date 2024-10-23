@@ -81,3 +81,13 @@
 .container a:hover {
     color: #45a29e;
 }
+
+/* Style for the image on the About page */
+.about-image {
+    width: 100%; /* Ensure it fits in the right column */
+    max-width: 250px; /* Limit the width for a vertical look */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners for a soft, professional look */
+    margin-bottom: 20px; /* Adds space below the image */
+}
+
