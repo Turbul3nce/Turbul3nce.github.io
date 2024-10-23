@@ -8,6 +8,7 @@ featured: false
 ---
 
 ### Background 
+
 Earlier this year, my team and I were testing a web application. Although I won't specify the site or CMS, the experience highlighted a vital aspect of pentesting and bug bounty hunting.
 
 Over the course of two weeks, we meticulously followed the OWASP testing guide, extensively enumerating every feature of the application. Despite our thorough efforts, we initially found no vulnerabilities. It wasn't until the end of our assignment that I decided to delve deeper by fuzzing directories several levels deep, driven by a determination to find anything that might have been overlooked.
