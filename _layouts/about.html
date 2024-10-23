@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<section class="about-section">
+    <div class="container about-container">
+
+        <div class="about-header">
+            <h1 class="about-title">{{ page.title }}</h1>
+        </div>
+
+        <div class="about-body">
+            <p class="about-intro">"In the dark corners of the web, I craft secure solutions while navigating the most challenging cybersecurity landscapes. Welcome to my story."</p>
+
+            <div class="about-content">
+                {{ content }}
+            </div>
+        </div>
+
+        <div class="about-skills">
+            <h2 class="skills-title">My Arsenal</h2>
+            <ul class="skills-list">
+                <li>Penetration Testing</li>
+                <li>Red Teaming</li>
+                <li>Reverse Engineering</li>
+                <li>CTF Writeups</li>
+                <li>Secure Software Development</li>
+            </ul>
+        </div>
+
+        {% if page.comments == true %}
+        <div id="comments-section" class="mt-5">
+            <div class="container">
+                {% include disqus.html %}
+            </div>
+        </div>
+        {% endif %}
+
+    </div>
+</section>
+
+<!-- Link to the new CSS file -->
+<link href="{{ site.baseurl }}/assets/css/about.css" rel="stylesheet">
