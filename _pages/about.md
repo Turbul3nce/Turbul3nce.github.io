@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: about
 title: Chandler Rose
 permalink: /about
 comments: false
