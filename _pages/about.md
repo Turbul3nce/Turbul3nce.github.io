@@ -19,7 +19,7 @@ comments: false
 
 <div class="col-md-4">
   <div class="sticky-top sticky-top-80">
-      <img src="/assets/images/profile.png" alt="Chandler Rose" class="img-fluid about-image">
+      <img src="/assets/images/pro2.png" alt="Chandler Rose" class="img-fluid about-image">
     </div>
   </div>
 </div>
