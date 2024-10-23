@@ -1,0 +1,83 @@
+/* General style for the About page */
+.about-section {
+    background-color: #1d1f21;
+    color: #c5c6c7;
+    padding: 50px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-title {
+    font-size: 36px;
+    color: #66fcf1;
+    border-bottom: 2px solid #45a29e;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.about-body {
+    margin-bottom: 50px;
+}
+
+.about-intro {
+    font-size: 20px;
+    color: #66fcf1;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #c5c6c7;
+}
+
+.about-skills {
+    background-color: #282c34;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.skills-title {
+    text-align: center;
+    color: #66fcf1;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.skills-list li {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #45a29e;
+}
+
+/* Comments Section */
+#comments-section {
+    background-color: #1f2225;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.container a {
+    color: #66fcf1;
+}
+
+.container a:hover {
+    color: #45a29e;
+}
